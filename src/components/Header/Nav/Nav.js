@@ -1,4 +1,5 @@
 import React from 'react'
+import { Button } from '../../Buttons/Button/Button'
 import { NavBar, NavList, NavItem, NavLink } from './nav.components'
 
 export const Nav = ({ open }) => {
@@ -15,7 +16,7 @@ export const Nav = ({ open }) => {
           <NavLink to='/about'>About</NavLink>
         </NavItem>
         <NavItem>
-          <NavLink to='/about'>Contact</NavLink>
+          <Button>Contact</Button>
         </NavItem>
       </NavList>
     </NavBar>

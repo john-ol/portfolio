@@ -16,7 +16,7 @@ export const GlobalStyles = createGlobalStyle`
     margin: 0;
     padding: 0;
     font-family: ${(props) => props.theme.fonts.main};
-    font-weight: ${(props) => props.theme.fonts.weigth.regular};
+    font-weight: ${(props) => props.theme.fonts.weight.regular};
     color: ${(props) => props.theme.colors.main}
     
   }

@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+
 export const Button = styled.button`
   background-color: transparent;
   cursor: pointer;
@@ -7,4 +8,3 @@ export const Button = styled.button`
     outline: none;
   }
 `
-

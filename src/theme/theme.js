@@ -7,7 +7,7 @@ export const theme = {
   },
   fonts: {
     main: `Montserrat, sans-serif`,
-    weigth: {
+    weight: {
       light: 300,
       regular: 400,
       bold: 700,
