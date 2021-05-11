@@ -1,7 +1,6 @@
 import styled, { css } from 'styled-components'
 
 export const SiteContainer = styled.div`
-  overflow: hidden;
   min-height: 100vh;
   display: flex;
   justify-content: space-between;
@@ -16,5 +15,10 @@ export const Container = styled.div`
     flex &&
     css`
       display: flex;
+    `}
+  ${({ grow }) =>
+    grow &&
+    css`
+      flex-grow: 1;
     `}
 `

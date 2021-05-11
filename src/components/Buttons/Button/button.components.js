@@ -8,10 +8,11 @@ export const RegularButton = styled(Button)`
   color: inherit;
   font-size: inherit;
   font-weight: inherit;
+  border-color: inherit;
+  transition: all 0.3s ease-in;
   border: ${(props) =>
       props.variant.border ? `${props.variant.border}rem` : '0.1rem'}
-    solid ${(props) => props.theme.colors.main};
-
+    solid;
   ${(props) =>
     props.variant.primary &&
     css`
@@ -26,11 +27,10 @@ export const RegularButton = styled(Button)`
         background-color: transparent;
       }
     `}
-
   ${(props) =>
     props.variant.secondary &&
     css`
-      color: ${(props) => props.theme.colors.main};
+      color: inherit;
       :hover {
         color: ${(props) => props.theme.colors.white};
         border: ${(props) =>
@@ -38,5 +38,5 @@ export const RegularButton = styled(Button)`
           solid transparent;
         background-color: ${(props) => props.theme.colors.main};
       }
-    `}
+    `};
 `

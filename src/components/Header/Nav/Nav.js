@@ -16,7 +16,9 @@ export const Nav = ({ open }) => {
           <NavLink to='/about'>About</NavLink>
         </NavItem>
         <NavItem>
-          <Button>Contact</Button>
+          <Button secondary border={0.2}>
+            Contact
+          </Button>
         </NavItem>
       </NavList>
     </NavBar>

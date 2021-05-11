@@ -3,11 +3,12 @@ import { Link } from 'gatsby'
 import { up } from 'styled-breakpoints'
 export const NavBar = styled.nav`
   display: none;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
+  z-index: 1;
   ${({ open }) =>
     open &&
     css`

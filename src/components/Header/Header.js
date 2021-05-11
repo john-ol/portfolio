@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'gatsby'
 import { Container } from '../Layout/layout.components'
 import {
   Header,
@@ -19,7 +20,9 @@ const SectionHeader = () => {
         <HeaderInner>
           {/* Info */}
           <Info>
-            <Logo />
+            <Link to='/'>
+              <Logo />
+            </Link>
             <User>
               <Name>{'Evgeniy\nOleinikov'}</Name>
               <Prof>Front-end developer</Prof>

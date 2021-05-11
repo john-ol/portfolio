@@ -12,6 +12,9 @@ export const BurgerButton = styled(Button)`
     open &&
     css`
       z-index: 1000;
+      position: fixed;
+      top: 1.5rem;
+      right: 1.5rem;
       span {
         background: transparent;
         transform: translateX(-0.2rem);
