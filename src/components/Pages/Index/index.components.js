@@ -1,6 +1,9 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 import { up } from 'styled-breakpoints'
+import { motion } from 'framer-motion'
 import { ButtonList } from '../../Buttons/ButtonList'
+import Github from '../../../images/icons/github.svg'
+import Linkedin from '../../../images/icons/linkedin.svg'
 
 export const Main = styled.main`
   display: flex;
@@ -59,24 +62,25 @@ export const HeroProf = styled.p`
   opacity: 0.8;
 `
 
-export const SocialIcons = styled.div`
+export const SocialIconList = styled.ul`
   display: flex;
   margin-bottom: 1.5rem;
-  > * {
-    cursor: pointer;
-    width: 3.5em;
-    height: 3.5em;
-    ${up('md')} {
-      font-size: 1.2rem;
-    }
-    :not(:last-child) {
-      margin-right: 1rem;
-    }
-  }
   ${up('sm')} {
     margin-bottom: 2rem;
   }
 `
+export const SocialIcon = styled(motion.li)`
+  cursor: pointer;
+  :not(:last-child) {
+    margin-right: 1rem;
+  }
+  svg {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+`
+export const GithubIcon = styled(Github)``
+export const LinkedinIcon = styled(Linkedin)``
 
 export const ButtonListHero = styled(ButtonList)`
   font-size: 1.3rem;

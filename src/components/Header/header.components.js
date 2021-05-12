@@ -22,7 +22,7 @@ export const Info = styled.div`
   display: flex;
 `
 export const Logo = styled(IconLogo)`
-  border: 0.2rem solid ${(props) => props.theme.colors.main};
+  border: 0.3rem solid ${(props) => props.theme.colors.main};
   border-radius: 0.8rem;
   padding: 0.3em;
   width: 5.5em;
@@ -39,7 +39,7 @@ export const Logo = styled(IconLogo)`
   }
 `
 export const User = styled.div`
-  margin-left: 0.4rem;
+  margin-left: 0.7rem;
   ${up('md')} {
     margin-left: 1rem;
   }

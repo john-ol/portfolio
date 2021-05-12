@@ -1,8 +1,6 @@
 import React from 'react'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import { useHeroImg } from '../components/Pages/Index/index.queries'
-import GithubIcon from '../images/icons/github.svg'
-import LinkedinIcon from '../images/icons/linkedin.svg'
 import { Layout } from '../components/Layout/Layout'
 import { Container } from '../components/Layout/layout.components'
 import {
@@ -13,7 +11,10 @@ import {
   HeroGreeting,
   HeroName,
   HeroProf,
-  SocialIcons,
+  SocialIconList,
+  SocialIcon,
+  GithubIcon,
+  LinkedinIcon,
   ButtonListHero,
   HeroImage,
 } from '../components/Pages/Index/index.components'
@@ -35,10 +36,22 @@ export default function Home() {
                 <HeroProf>Front-end developer</HeroProf>
               </HeroInfo>
               {/* Social Links */}
-              <SocialIcons>
-                <GithubIcon />
-                <LinkedinIcon />
-              </SocialIcons>
+              <SocialIconList>
+                <SocialIcon
+                  whileHover={{ translateY: '-0.8rem' }}
+                  whileTap={{ scale: 0.9 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <GithubIcon />
+                </SocialIcon>
+                <SocialIcon
+                  whileHover={{ translateY: '-0.8rem' }}
+                  whileTap={{ scale: 0.9 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <LinkedinIcon />
+                </SocialIcon>
+              </SocialIconList>
               <ButtonListHero>
                 <Button primary>See my resume</Button>
                 <Button primary>Hire me</Button>
