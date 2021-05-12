@@ -13,7 +13,7 @@ const SectionFooter = () => {
       <Container>
         <FooterInner>
           <FooterCopyrigth>
-            Evgeniy Oleinikov - {new Date().getFullYear()}
+            Evgeniy Oleinikov &copy;{new Date().getFullYear()}
           </FooterCopyrigth>
           <FooterPlatform>
             Made with GatsbyJs and Styled components

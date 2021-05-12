@@ -13,6 +13,10 @@ export const FooterInner = styled.div`
   ${up('md')} {
     flex-direction: row;
     justify-content: space-between;
+    padding: 1.5rem 0;
+  }
+  ${up('lg')} {
+    padding: 2rem 0;
   }
 `
 export const FooterCopyrigth = styled.p`
@@ -21,6 +25,17 @@ export const FooterCopyrigth = styled.p`
   margin-bottom: 0.5rem;
   ${up('md')} {
     margin-bottom: 0rem;
+    font-size: 1.3rem;
+  }
+  ${up('lg')} {
+    font-size: 1.5rem;
   }
 `
-export const FooterPlatform = styled.p``
+export const FooterPlatform = styled.p`
+  ${up('md')} {
+    font-size: 1.1rem;
+  }
+  ${up('lg')} {
+    font-size: 1.3rem;
+  }
+`

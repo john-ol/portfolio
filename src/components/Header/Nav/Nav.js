@@ -7,13 +7,19 @@ export const Nav = ({ open }) => {
     <NavBar open={open}>
       <NavList>
         <NavItem>
-          <NavLink to='/resume'>Resume</NavLink>
+          <NavLink to='/resume' activeClassName='active'>
+            Resume
+          </NavLink>
         </NavItem>
         <NavItem>
-          <NavLink to='/projects'>Projects</NavLink>
+          <NavLink to='/projects' activeClassName='active'>
+            Projects
+          </NavLink>
         </NavItem>
         <NavItem>
-          <NavLink to='/about'>About</NavLink>
+          <NavLink to='/about' activeClassName='active'>
+            About
+          </NavLink>
         </NavItem>
         <NavItem>
           <Button secondary border={0.2}>

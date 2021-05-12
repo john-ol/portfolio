@@ -35,8 +35,14 @@ export const NavList = styled.ul`
   color: ${(props) => props.theme.colors.white};
   ${up('md')} {
     flex-direction: row;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: ${(props) => props.theme.colors.main};
+  }
+  ${up('lg')} {
+    font-size: 1.6rem;
+  }
+  ${up('xl')} {
+    font-size: 1.8rem;
   }
 `
 export const NavItem = styled.li`
@@ -63,16 +69,27 @@ export const NavItem = styled.li`
     }
   }
   ${up('lg')} {
-    font-size: 1.6rem;
     :not(:last-child) {
       margin-right: 8rem;
     }
   }
   ${up('xl')} {
-    font-size: 1.8rem;
     :not(:last-child) {
       margin-right: 10rem;
     }
   }
 `
-export const NavLink = styled(Link)``
+export const NavLink = styled(Link)`
+  &.active {
+    position: relative;
+    :after {
+      content: '';
+      position: absolute;
+      bottom: -1.1rem;
+      left: 0;
+      width: 100%;
+      height: 0.3rem;
+      background-color: ${(props) => props.theme.colors.main};
+    }
+  }
+`
