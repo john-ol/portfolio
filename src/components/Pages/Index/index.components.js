@@ -16,6 +16,10 @@ export const HeroRow = styled(Row)`
   ${up('md', 'landscape')} {
     padding: 0 2rem;
   }
+
+  ${up('xl')} {
+    padding: 0 4rem;
+  }
 `
 export const InfoCol = styled(Col)`
   flex-direction: column;
@@ -34,6 +38,14 @@ export const HeroInfo = styled.div`
   ${up('sm')} {
     margin-bottom: 2rem;
   }
+
+  ${up('lg')} {
+    margin-bottom: 2.7rem;
+  }
+
+  ${up('xl')} {
+    margin-bottom: 4rem;
+  }
 `
 
 export const HeroGreeting = styled.h2`
@@ -48,6 +60,16 @@ export const HeroGreeting = styled.h2`
   ${up('md')} {
     font-size: 3rem;
   }
+
+  ${up('lg')} {
+    font-size: 3.2rem;
+    margin-bottom: 1.2rem;
+  }
+
+  ${up('xl')} {
+    font-size: 4rem;
+    margin-bottom: 1.8rem;
+  }
 `
 export const HeroName = styled.h1`
   font-weight: ${(props) => props.theme.fonts.weight.bold};
@@ -61,6 +83,15 @@ export const HeroName = styled.h1`
   ${up('md')} {
     font-size: 4.2rem;
   }
+
+  ${up('lg')} {
+    font-size: 4.5rem;
+  }
+
+  ${up('xl')} {
+    font-size: 5.7rem;
+    margin-bottom: 1rem;
+  }
 `
 export const HeroProf = styled.p`
   font-size: 1.8rem;
@@ -68,6 +99,14 @@ export const HeroProf = styled.p`
 
   ${up('md')} {
     font-size: 2.1rem;
+  }
+
+  ${up('lg')} {
+    font-size: 2.3rem;
+  }
+
+  ${up('xl')} {
+    font-size: 2.8rem;
   }
 `
 
@@ -78,12 +117,32 @@ export const SocialIconList = styled.ul`
   ${up('sm')} {
     margin-bottom: 2rem;
   }
+
+  ${up('lg')} {
+    margin-bottom: 2.7rem;
+  }
+
+  ${up('lg')} {
+    margin-bottom: 4rem;
+  }
 `
 export const SocialIcon = styled(motion.li)`
   cursor: pointer;
 
   :not(:last-child) {
     margin-right: 1rem;
+
+    ${up('md')} {
+      margin-right: 1.2rem;
+    }
+
+    ${up('lg')} {
+      margin-right: 1.4rem;
+    }
+
+    ${up('xl')} {
+      margin-right: 1.8rem;
+    }
   }
 
   svg {
@@ -93,6 +152,16 @@ export const SocialIcon = styled(motion.li)`
     ${up('md')} {
       width: 4rem;
       height: 4rem;
+    }
+
+    ${up('lg')} {
+      width: 4.5rem;
+      height: 4.5rem;
+    }
+
+    ${up('xl')} {
+      width: 5.5rem;
+      height: 5.5rem;
     }
   }
 `
@@ -104,6 +173,21 @@ export const ButtonListHero = styled(ButtonList)`
   font-weight: ${(props) => props.theme.fonts.weight.bold};
 
   > * {
+    :not(:last-child) {
+      margin-right: 1rem;
+
+      ${up('md')} {
+        margin-right: 1.4rem;
+      }
+
+      ${up('lg')} {
+        margin-right: 1.6rem;
+      }
+
+      ${up('xl')} {
+        margin-right: 2rem;
+      }
+    }
     box-shadow: 0px 7px 5px -3px rgba(43, 42, 44, 0.12);
   }
 
@@ -113,6 +197,14 @@ export const ButtonListHero = styled(ButtonList)`
 
   ${up('md')} {
     font-size: 1.6rem;
+  }
+
+  ${up('lg')} {
+    font-size: 1.8rem;
+  }
+
+  ${up('xl')} {
+    font-size: 2.1rem;
   }
 `
 
