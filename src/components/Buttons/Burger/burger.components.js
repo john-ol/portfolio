@@ -8,6 +8,7 @@ export const BurgerButton = styled(Button)`
   width: 4rem;
   height: 4rem;
   border-radius: 0.3rem;
+
   ${({ open }) =>
     open &&
     css`
@@ -15,19 +16,23 @@ export const BurgerButton = styled(Button)`
       position: fixed;
       top: 1.5rem;
       right: 1.5rem;
+
       span {
         background: transparent;
         transform: translateX(-0.2rem);
+
         :before {
           transform: rotate(45deg) translate(0.2rem, -0.2rem);
           background-color: ${(props) => props.theme.colors.white};
         }
+
         :after {
           transform: rotate(-45deg) translate(0.2rem, 0.2rem);
           background-color: ${(props) => props.theme.colors.white};
         }
       }
     `}
+
   ${up('md')} {
     display: none;
   }
@@ -40,6 +45,7 @@ export const Line = styled.span`
   display: block;
   border-radius: 0.5rem;
   transition: all 0.4s ease-in-out;
+
   :after,
   :before {
     content: '';
@@ -53,9 +59,11 @@ export const Line = styled.span`
     z-index: 1;
     transition: all 0.4s ease-in-out;
   }
+
   :after {
     transform: translateY(0.9rem);
   }
+
   :before {
     transform: translateY(-0.9rem);
   }

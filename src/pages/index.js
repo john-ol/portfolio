@@ -6,7 +6,8 @@ import { Container } from '../components/Layout/layout.components'
 import {
   Main,
   Row,
-  Col,
+  InfoCol,
+  ImageCol,
   HeroInfo,
   HeroGreeting,
   HeroName,
@@ -28,7 +29,7 @@ export default function Home() {
       <Main>
         <Container flex grow>
           <Row>
-            <Col>
+            <InfoCol>
               {/* Info */}
               <HeroInfo>
                 <HeroGreeting>Hello, I'm</HeroGreeting>
@@ -56,12 +57,12 @@ export default function Home() {
                 <Button primary>See my resume</Button>
                 <Button primary>Hire me</Button>
               </ButtonListHero>
-            </Col>
-            <Col>
+            </InfoCol>
+            <ImageCol>
               <HeroImage>
                 <GatsbyImage image={image} alt={file.name} />
               </HeroImage>
-            </Col>
+            </ImageCol>
           </Row>
         </Container>
       </Main>

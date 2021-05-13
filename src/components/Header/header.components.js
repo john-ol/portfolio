@@ -14,6 +14,7 @@ export const HeaderInner = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   ${up('md')} {
     padding: 1.5rem 0;
   }
@@ -28,21 +29,26 @@ export const Logo = styled(IconLogo)`
   width: 5.5em;
   height: 5.5em;
   fill: ${(props) => props.theme.colors.main};
+
   ${up('md')} {
     font-size: 1.1rem;
   }
+
   ${up('lg')} {
     font-size: 1.2rem;
   }
+
   ${up('xl')} {
     font-size: 1.3rem;
   }
 `
 export const User = styled.div`
   margin-left: 0.7rem;
+
   ${up('md')} {
     margin-left: 1rem;
   }
+
   ${up('xl')} {
     margin-left: 1.2rem;
   }
@@ -52,12 +58,15 @@ export const Name = styled.p`
   font-weight: ${(props) => props.theme.fonts.weight.bold};
   white-space: pre-line;
   margin-bottom: 0.1rem;
+
   ${up('md')} {
     font-size: 2rem;
   }
+
   ${up('lg')} {
     font-size: 2.2rem;
   }
+
   ${up('xl')} {
     font-size: 2.3rem;
   }
@@ -65,12 +74,15 @@ export const Name = styled.p`
 export const Prof = styled.p`
   font-size: 1.3rem;
   opacity: 0.8;
+
   ${up('md')} {
     font-size: 1.5rem;
   }
+
   ${up('lg')} {
     font-size: 1.6rem;
   }
+
   ${up('xl')} {
     font-size: 1.7rem;
   }

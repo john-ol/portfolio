@@ -1,5 +1,4 @@
 import styled, { css } from 'styled-components'
-
 import { Button } from '../Button'
 
 export const RegularButton = styled(Button)`
@@ -14,12 +13,14 @@ export const RegularButton = styled(Button)`
   border: ${(props) =>
       props.variant.border ? `${props.variant.border}rem` : '0.1rem'}
     solid;
+
   ${(props) =>
     props.variant.primary &&
     css`
       color: ${(props) => props.theme.colors.white};
       background-color: ${(props) => props.theme.colors.main};
       border-color: transparent;
+
       :hover {
         color: ${(props) => props.theme.colors.main};
         border: ${(props) =>
@@ -28,10 +29,12 @@ export const RegularButton = styled(Button)`
         background-color: transparent;
       }
     `}
+
   ${(props) =>
     props.variant.secondary &&
     css`
       color: inherit;
+
       :hover {
         color: ${(props) => props.theme.colors.white};
         border: ${(props) =>

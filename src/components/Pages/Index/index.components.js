@@ -14,20 +14,31 @@ export const Row = styled.div`
   flex-direction: column;
   justify-content: space-around;
   padding: 1rem 0;
+
   ${up('sm')} {
     padding: 0;
   }
-  ${up('md', 'portrait')} {
-    flex-direction: column;
-  }
+
   ${up('md', 'landscape')} {
     flex-direction: row;
   }
 `
-export const Col = styled.div`
+export const InfoCol = styled.div`
+  width: 100%;
   display: flex;
   flex-direction: column;
-  ${up('lg')} {
+
+  ${up('md', 'landscape')} {
+    width: 50%;
+  }
+`
+export const ImageCol = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  ${up('md', 'landscape')} {
     width: 50%;
   }
 `
@@ -36,6 +47,7 @@ export const HeroInfo = styled.div`
   display: flex;
   flex-direction: column;
   margin-bottom: 1.5rem;
+
   ${up('sm')} {
     margin-bottom: 2rem;
   }
@@ -45,6 +57,7 @@ export const HeroGreeting = styled.h2`
   font-weight: ${(props) => props.theme.fonts.weight.light};
   font-size: 2.2rem;
   margin-bottom: 0.5rem;
+
   ${up('sm')} {
     font-size: 2.5rem;
   }
@@ -53,6 +66,7 @@ export const HeroName = styled.h1`
   font-weight: ${(props) => props.theme.fonts.weight.bold};
   font-size: 3.5rem;
   margin-bottom: 0.3rem;
+
   ${up('sm')} {
     font-size: 3.8rem;
   }
@@ -65,15 +79,18 @@ export const HeroProf = styled.p`
 export const SocialIconList = styled.ul`
   display: flex;
   margin-bottom: 1.5rem;
+
   ${up('sm')} {
     margin-bottom: 2rem;
   }
 `
 export const SocialIcon = styled(motion.li)`
   cursor: pointer;
+
   :not(:last-child) {
     margin-right: 1rem;
   }
+
   svg {
     width: 3.5rem;
     height: 3.5rem;
@@ -85,9 +102,11 @@ export const LinkedinIcon = styled(Linkedin)``
 export const ButtonListHero = styled(ButtonList)`
   font-size: 1.3rem;
   font-weight: ${(props) => props.theme.fonts.weight.bold};
+
   > * {
     box-shadow: 0px 7px 5px -3px rgba(43, 42, 44, 0.12);
   }
+
   ${up('sm')} {
     font-size: 1.5rem;
   }
@@ -98,9 +117,11 @@ export const HeroImage = styled.div`
   position: relative;
   max-width: 60%;
   margin-top: 1rem;
+
   ${up('sm')} {
     max-width: 43%;
   }
+
   ${up('md')} {
     max-width: 40%;
   }
