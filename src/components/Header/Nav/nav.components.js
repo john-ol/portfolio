@@ -85,7 +85,7 @@ export const NavLink = styled(Link)`
     :after {
       content: '';
       position: absolute;
-      bottom: -1.1rem;
+      bottom: -1.2rem;
       left: 0;
       width: 100%;
       height: 0.3rem;
