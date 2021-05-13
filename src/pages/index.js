@@ -5,7 +5,7 @@ import { Layout } from '../components/Layout/Layout'
 import { Container } from '../components/Layout/layout.components'
 import {
   Main,
-  Row,
+  HeroRow,
   InfoCol,
   ImageCol,
   HeroInfo,
@@ -28,7 +28,7 @@ export default function Home() {
     <Layout>
       <Main>
         <Container flex grow>
-          <Row>
+          <HeroRow>
             <InfoCol>
               {/* Info */}
               <HeroInfo>
@@ -63,7 +63,7 @@ export default function Home() {
                 <GatsbyImage image={image} alt={file.name} />
               </HeroImage>
             </ImageCol>
-          </Row>
+          </HeroRow>
         </Container>
       </Main>
     </Layout>

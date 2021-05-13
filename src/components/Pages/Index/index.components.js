@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import { up } from 'styled-breakpoints'
 import { motion } from 'framer-motion'
+import { Row, Col } from '../../Grid/grid.components'
 import { ButtonList } from '../../Buttons/ButtonList'
 import Github from '../../../images/icons/github.svg'
 import Linkedin from '../../../images/icons/linkedin.svg'
@@ -9,38 +10,20 @@ export const Main = styled.main`
   display: flex;
   flex-grow: 1;
 `
-export const Row = styled.div`
-  display: flex;
-  flex-direction: column;
+export const HeroRow = styled(Row)`
   justify-content: space-around;
-  padding: 1rem 0;
-
-  ${up('sm')} {
-    padding: 0;
-  }
 
   ${up('md', 'landscape')} {
-    flex-direction: row;
+    padding: 0 2rem;
   }
 `
-export const InfoCol = styled.div`
-  width: 100%;
-  display: flex;
+export const InfoCol = styled(Col)`
   flex-direction: column;
-
-  ${up('md', 'landscape')} {
-    width: 50%;
-  }
+  justify-content: center;
 `
-export const ImageCol = styled.div`
-  width: 100%;
-  display: flex;
+export const ImageCol = styled(Col)`
   justify-content: center;
   align-items: center;
-
-  ${up('md', 'landscape')} {
-    width: 50%;
-  }
 `
 
 export const HeroInfo = styled.div`
@@ -61,6 +44,10 @@ export const HeroGreeting = styled.h2`
   ${up('sm')} {
     font-size: 2.5rem;
   }
+
+  ${up('md')} {
+    font-size: 3rem;
+  }
 `
 export const HeroName = styled.h1`
   font-weight: ${(props) => props.theme.fonts.weight.bold};
@@ -70,10 +57,18 @@ export const HeroName = styled.h1`
   ${up('sm')} {
     font-size: 3.8rem;
   }
+
+  ${up('md')} {
+    font-size: 4.2rem;
+  }
 `
 export const HeroProf = styled.p`
   font-size: 1.8rem;
   opacity: 0.8;
+
+  ${up('md')} {
+    font-size: 2.1rem;
+  }
 `
 
 export const SocialIconList = styled.ul`
@@ -94,6 +89,11 @@ export const SocialIcon = styled(motion.li)`
   svg {
     width: 3.5rem;
     height: 3.5rem;
+
+    ${up('md')} {
+      width: 4rem;
+      height: 4rem;
+    }
   }
 `
 export const GithubIcon = styled(Github)``
@@ -110,6 +110,10 @@ export const ButtonListHero = styled(ButtonList)`
   ${up('sm')} {
     font-size: 1.5rem;
   }
+
+  ${up('md')} {
+    font-size: 1.6rem;
+  }
 `
 
 export const HeroImage = styled.div`
@@ -119,10 +123,23 @@ export const HeroImage = styled.div`
   margin-top: 1rem;
 
   ${up('sm')} {
+    margin-top: 0;
     max-width: 43%;
   }
 
-  ${up('md')} {
-    max-width: 40%;
+  ${up('md', 'portrait')} {
+    max-width: 37%;
+  }
+
+  ${up('md', 'landscape')} {
+    max-width: 50%;
+  }
+
+  ${up('lg', 'portrait')} {
+    max-width: 35%;
+  }
+
+  ${up('xl')} {
+    max-width: 50%;
   }
 `
