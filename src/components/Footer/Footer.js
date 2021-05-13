@@ -3,7 +3,12 @@ import { Container } from '../Layout/layout.components'
 import {
   Footer,
   FooterInner,
+  FooterInfo,
   FooterCopyrigth,
+  FooterSocialIcons,
+  SocialIcon,
+  GithubIcon,
+  LinkedinIcon,
   FooterPlatform,
 } from './footer.components'
 
@@ -12,9 +17,20 @@ const SectionFooter = () => {
     <Footer>
       <Container>
         <FooterInner>
-          <FooterCopyrigth>
-            Evgeniy Oleinikov &copy;{new Date().getFullYear()}
-          </FooterCopyrigth>
+          <FooterInfo>
+            <FooterCopyrigth>
+              Evgeniy Oleinikov &copy;{new Date().getFullYear()}
+            </FooterCopyrigth>
+
+            <FooterSocialIcons>
+              <SocialIcon>
+                <GithubIcon />
+              </SocialIcon>
+              <SocialIcon>
+                <LinkedinIcon />
+              </SocialIcon>
+            </FooterSocialIcons>
+          </FooterInfo>
           <FooterPlatform>
             Made with GatsbyJs and Styled components
           </FooterPlatform>

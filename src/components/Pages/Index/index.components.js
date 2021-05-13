@@ -166,7 +166,9 @@ export const SocialIcon = styled(motion.li)`
   }
 `
 export const GithubIcon = styled(Github)``
-export const LinkedinIcon = styled(Linkedin)``
+export const LinkedinIcon = styled(Linkedin)`
+  fill: #0077b7;
+`
 
 export const ButtonListHero = styled(ButtonList)`
   font-size: 1.3rem;
