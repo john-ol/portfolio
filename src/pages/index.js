@@ -20,6 +20,7 @@ import {
   HeroImage,
 } from '../components/Pages/Index/index.components'
 import { Button } from '../components/Buttons/Button/Button'
+import { socialIconsAnimate } from '../components/Pages/Index/index.animations'
 
 export default function Home() {
   const { file } = useHeroImg()
@@ -39,16 +40,18 @@ export default function Home() {
               {/* Social Links */}
               <SocialIconList>
                 <SocialIcon
-                  whileHover={{ translateY: '-0.8rem' }}
-                  whileTap={{ scale: 0.9 }}
-                  transition={{ duration: 0.3 }}
+                  variants={socialIconsAnimate}
+                  whileHover='onHover'
+                  whileTap='onClick'
+                  transition='transition'
                 >
                   <GithubIcon />
                 </SocialIcon>
                 <SocialIcon
-                  whileHover={{ translateY: '-0.8rem' }}
-                  whileTap={{ scale: 0.9 }}
-                  transition={{ duration: 0.3 }}
+                  variants={socialIconsAnimate}
+                  whileHover='onHover'
+                  whileTap='onClick'
+                  transition='transition'
                 >
                   <LinkedinIcon />
                 </SocialIcon>

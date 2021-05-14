@@ -55,24 +55,6 @@ export const NavItem = styled.li`
     :not(:last-child) {
       position: relative;
       margin-right: 5rem;
-
-      :after {
-        content: '';
-        position: absolute;
-        z-index: 1;
-        bottom: -1.2rem;
-        left: 0;
-        width: 0;
-        height: 0.3rem;
-        background-color: ${(props) => props.theme.colors.main};
-        transition: width 0.2s linear;
-      }
-
-      :hover {
-        :after {
-          width: 100%;
-        }
-      }
     }
   }
 
@@ -89,16 +71,36 @@ export const NavItem = styled.li`
   }
 `
 export const NavLink = styled(Link)`
+  :after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    bottom: -1.1rem;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    height: 0.3rem;
+    background-color: ${(props) => props.theme.colors.main};
+    transition: opacity 0.2s linear;
+  }
+
+  :hover {
+    :after {
+      opacity: 1;
+    }
+  }
+
   &.active {
     position: relative;
 
     :after {
       content: '';
       position: absolute;
-      bottom: -1.2rem;
+      bottom: -1.1rem;
       left: 0;
+      opacity: 1;
       width: 100%;
-      height: 0.3rem;
+      height: 3px;
       background-color: ${(props) => props.theme.colors.main};
     }
   }

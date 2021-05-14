@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components'
 import { Button } from '../Button'
 
 export const RegularButton = styled(Button)`
-  border-radius: 0.5rem;
+  border-radius: 0.4rem;
   padding: 0.8em 1em;
   text-transform: uppercase;
   color: inherit;
@@ -10,6 +10,7 @@ export const RegularButton = styled(Button)`
   font-weight: inherit;
   border-color: inherit;
   transition: all 0.3s ease-in;
+
   border: ${(props) =>
       props.variant.border ? `${props.variant.border}rem` : '0.1rem'}
     solid;
