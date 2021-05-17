@@ -3,7 +3,7 @@ export const socialIconsAnimate = {
     translateY: '-0.8rem',
   },
   onClick: {
-    scale: [0.9, 1],
+    scale: 0.9,
   },
   transition: {
     duration: 0.3,

@@ -83,7 +83,6 @@ export const NavLink = styled(Link)`
     background-color: ${(props) => props.theme.colors.main};
     transition: opacity 0.2s linear;
   }
-
   :hover {
     :after {
       opacity: 1;
@@ -100,7 +99,7 @@ export const NavLink = styled(Link)`
       left: 0;
       opacity: 1;
       width: 100%;
-      height: 3px;
+      height: 0.3rem;
       background-color: ${(props) => props.theme.colors.main};
     }
   }
