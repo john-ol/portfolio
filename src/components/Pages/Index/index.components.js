@@ -6,10 +6,6 @@ import { ButtonList } from '../../Buttons/ButtonList'
 import Github from '../../../images/icons/github.svg'
 import Linkedin from '../../../images/icons/linkedin.svg'
 
-export const Main = styled.main`
-  display: flex;
-  flex-grow: 1;
-`
 export const HeroRow = styled(Row)`
   justify-content: space-around;
 

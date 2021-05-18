@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { up } from 'styled-breakpoints'
-
+import { motion } from 'framer-motion'
 export const Row = styled.div`
   width: 100%;
   display: flex;
@@ -16,7 +16,7 @@ export const Row = styled.div`
   }
 `
 
-export const Col = styled.div`
+export const Col = styled(motion.div)`
   width: 100%;
   display: flex;
 
