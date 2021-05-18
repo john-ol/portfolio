@@ -214,10 +214,9 @@ export const HeroImage = styled.div`
   align-self: center;
   position: relative;
   max-width: 60%;
-  margin-top: 1rem;
+  margin: 1.5rem 0;
 
   ${up('sm')} {
-    margin-top: 0;
     max-width: 43%;
   }
 
