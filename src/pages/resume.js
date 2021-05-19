@@ -1,15 +1,20 @@
 import React from 'react'
 import { Layout } from '../components/Layout/Layout'
 import { Container } from '../components/Layout/layout.components'
-import { ResumeWrapper } from '../components/Pages/resume/resume.components'
-import { CardList } from '../components/Pages/resume/CardList/CardList'
+import {
+  ResumeWrapper,
+  ResumeGrid,
+} from '../components/Pages/resume/resume.components'
+import { Cards } from '../components/Pages/resume/Cards/Cards'
 
 export default function Resume() {
   return (
     <Layout>
       <Container>
         <ResumeWrapper>
-          <CardList />
+          <ResumeGrid>
+            <Cards />
+          </ResumeGrid>
         </ResumeWrapper>
       </Container>
     </Layout>

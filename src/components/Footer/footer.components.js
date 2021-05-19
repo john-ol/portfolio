@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 import { up } from 'styled-breakpoints'
 
-import Github from '../../images/icons/github.svg'
-import Linkedin from '../../images/icons/linkedin.svg'
+import Github from '../../images/icons/hero/github.svg'
+import Linkedin from '../../images/icons/hero/linkedin.svg'
 
 export const Footer = styled.footer`
   background-color: ${(props) => props.theme.colors.main};

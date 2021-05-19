@@ -3,8 +3,8 @@ import { up } from 'styled-breakpoints'
 import { motion } from 'framer-motion'
 import { Row, Col } from '../../Grid/grid.components'
 import { ButtonList } from '../../Buttons/ButtonList'
-import Github from '../../../images/icons/github.svg'
-import Linkedin from '../../../images/icons/linkedin.svg'
+import Github from '../../../images/icons/hero/github.svg'
+import Linkedin from '../../../images/icons/hero/linkedin.svg'
 
 export const HeroRow = styled(Row)`
   justify-content: space-around;

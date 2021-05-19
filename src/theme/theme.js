@@ -3,6 +3,7 @@ export const theme = {
     main: '#2b2a2c',
     secondary: '#6a696b',
     background: '#f5f5f5',
+    icons: '#0077b7',
     borders: '#e6e6e6',
     white: '#ffffff',
   },
