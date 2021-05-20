@@ -1,21 +1,25 @@
 import React from 'react'
 import {
-  TimeLine,
+  TimeLineSection,
   TimeLineItem,
   TimeLineTitle,
   TimeLineText,
 } from '../timeline.components'
+import { EducationCard } from './education.components'
+
 export const Education = () => {
   return (
-    <TimeLine>
-      <TimeLineItem date='20-07-1990'>
-        <TimeLineTitle>Computer science (bachelor)</TimeLineTitle>
-        <TimeLineText>National Transport University</TimeLineText>
-      </TimeLineItem>
-      <TimeLineItem date='20-07-1990'>
-        <TimeLineTitle>Computer science (master)</TimeLineTitle>
-        <TimeLineText>National Transport University</TimeLineText>
-      </TimeLineItem>
-    </TimeLine>
+    <EducationCard>
+      <TimeLineSection>
+        <TimeLineItem date='20-07-1990'>
+          <TimeLineTitle>Computer science (bachelor)</TimeLineTitle>
+          <TimeLineText>National Transport University</TimeLineText>
+        </TimeLineItem>
+        <TimeLineItem date='20-07-1990'>
+          <TimeLineTitle>Computer science (master)</TimeLineTitle>
+          <TimeLineText>National Transport University</TimeLineText>
+        </TimeLineItem>
+      </TimeLineSection>
+    </EducationCard>
   )
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import { navigate } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import { useHeroImg } from '../components/Pages/Index/index.queries'
 import { Layout } from '../components/Layout/Layout'
@@ -28,6 +29,7 @@ import {
 export default function Home() {
   const { file } = useHeroImg()
   const image = getImage(file.childImageSharp)
+
   return (
     <Layout>
       <Container flex grow>
@@ -63,8 +65,10 @@ export default function Home() {
               </SocialIcon>
             </SocialIconList>
             <ButtonListHero>
-              <Button primary>See my resume</Button>
-              <Button primary>Hire me</Button>
+              <Button variant='primary' onClick={() => navigate('/resume')}>
+                See my resume
+              </Button>
+              <Button variant='primary'>Hire me</Button>
             </ButtonListHero>
           </InfoCol>
           <ImageCol

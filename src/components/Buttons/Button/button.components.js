@@ -11,12 +11,10 @@ export const RegularButton = styled(Button)`
   border-color: inherit;
   transition: all 0.3s ease-in;
 
-  border: ${(props) =>
-      props.variant.border ? `${props.variant.border}rem` : '0.1rem'}
-    solid;
+  border: ${({ border }) => (border ? `${border}rem` : '0.1rem')} solid;
 
   ${(props) =>
-    props.variant.primary &&
+    props.variant === 'primary' &&
     css`
       color: ${(props) => props.theme.colors.white};
       background-color: ${(props) => props.theme.colors.main};
@@ -24,22 +22,20 @@ export const RegularButton = styled(Button)`
 
       :hover {
         color: ${(props) => props.theme.colors.main};
-        border: ${(props) =>
-            props.variant.border ? `${props.variant.border}rem` : '0.1rem'}
+        border: ${(props) => (props.border ? `${props.border}rem` : '0.1rem')}
           solid ${(props) => props.theme.colors.main};
         background-color: transparent;
       }
     `}
 
   ${(props) =>
-    props.variant.secondary &&
+    props.variant === 'secondary' &&
     css`
       color: inherit;
 
       :hover {
         color: ${(props) => props.theme.colors.white};
-        border: ${(props) =>
-            props.variant.border ? `${props.variant.border}rem` : '0.1rem'}
+        border: ${(props) => (props.border ? `${props.border}rem` : '0.1rem')}
           solid transparent;
         background-color: ${(props) => props.theme.colors.main};
       }

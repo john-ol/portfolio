@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const TimeLine = styled.div``
+export const TimeLineSection = styled.section``
 
 export const TimeLineItem = styled.div`
   position: relative;

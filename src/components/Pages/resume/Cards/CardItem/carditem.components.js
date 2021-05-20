@@ -10,12 +10,12 @@ export const CardHeader = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 0.8rem;
+  padding-bottom: 0.6rem;
   border-bottom: 0.1rem solid ${(props) => props.theme.colors.borders};
 `
 
 export const CardTitle = styled.h2`
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 `
 
 export const CardIcon = styled.div`
@@ -24,8 +24,8 @@ export const CardIcon = styled.div`
   justify-content: center;
   > svg {
     fill: ${(props) => props.theme.colors.icons};
-    height: 3rem;
-    width: 3rem;
+    height: 2.3rem;
+    width: 2.3rem;
   }
 `
 

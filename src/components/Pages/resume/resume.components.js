@@ -7,12 +7,12 @@ export const ResumeWrapper = styled.div`
   justify-content: center;
 `
 
-export const ResumeGrid = styled.div`
+export const ResumeGrid = styled.section`
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 1rem;
   width: 100%;
   ${up('sm')} {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 `

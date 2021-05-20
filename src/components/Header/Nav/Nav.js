@@ -22,7 +22,7 @@ export const Nav = ({ open }) => {
           </NavLink>
         </NavItem>
         <NavItem>
-          <Button secondary border={0.2}>
+          <Button variant='secondary' border={0.2}>
             Contact
           </Button>
         </NavItem>
