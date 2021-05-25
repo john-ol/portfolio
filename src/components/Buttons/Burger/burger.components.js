@@ -3,10 +3,10 @@ import { up } from 'styled-breakpoints'
 import { Button } from '../Button'
 
 export const BurgerButton = styled(Button)`
-  padding: 0.4rem;
+  padding: 0.4em;
   position: relative;
-  width: 4rem;
-  height: 4rem;
+  width: 4em;
+  height: 4em;
   border-radius: 0.3rem;
 
   ${({ open }) =>
@@ -61,10 +61,10 @@ export const Line = styled.span`
   }
 
   :after {
-    transform: translateY(0.9rem);
+    transform: translateY(0.9em);
   }
 
   :before {
-    transform: translateY(-0.9rem);
+    transform: translateY(-0.9em);
   }
 `

@@ -4,7 +4,8 @@ import { motion } from 'framer-motion'
 export const Card = styled(motion.div)`
   padding: 1rem 1.2rem;
   background-color: ${(props) => props.theme.colors.white};
-  border-radius: 0.8rem;
+  border-radius: 0.5rem;
+  border: 0.1rem solid ${(props) => props.theme.colors.borders}; ;
 `
 export const CardHeader = styled.div`
   display: flex;

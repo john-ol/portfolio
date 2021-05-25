@@ -14,7 +14,7 @@ import {
   LocationText,
   PhoneText,
   MailText,
-  GithubText,
+  GithubLink,
   InfoCard,
 } from './info.components'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
@@ -49,9 +49,9 @@ export const Info = () => {
             </ContactInfoItem>
             <ContactInfoItem>
               <GithubIcon />
-              <GithubText href='https://github.com/john-ol' target='blank'>
+              <GithubLink href='https://github.com/john-ol' target='blank'>
                 https://github.com/john-ol
-              </GithubText>
+              </GithubLink>
             </ContactInfoItem>
           </ContactInfo>
         </Information>

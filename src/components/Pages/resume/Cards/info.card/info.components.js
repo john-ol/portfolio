@@ -59,6 +59,10 @@ export const LocationText = styled.p``
 export const PhoneText = styled.p``
 export const MailText = styled.a``
 
-export const GithubText = styled.a`
+export const GithubLink = styled.a`
   cursor: pointer;
+
+  :hover {
+    text-decoration: underline;
+  }
 `

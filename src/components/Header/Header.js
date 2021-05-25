@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { Link } from 'gatsby'
+
 import { Container } from '../Layout/layout.components'
 import {
   Header,
@@ -14,8 +15,23 @@ import { Burger } from './../Buttons/Burger/Burger'
 import { Nav } from './Nav/Nav'
 const SectionHeader = () => {
   const [open, setOpen] = useState(false)
+  const [scrollable, setScrollable] = useState(0)
+
+  const handleScroll = () => {
+    const position = window.pageYOffset
+    setScrollable(position)
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll, { passive: true })
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
   return (
-    <Header>
+    <Header scrollable={scrollable}>
       <Container>
         <HeaderInner>
           {/* Info */}

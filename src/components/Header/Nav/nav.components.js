@@ -32,22 +32,22 @@ export const NavList = styled.ul`
   align-items: center;
   justify-content: space-evenly;
   text-transform: uppercase;
-  font-size: 2.5rem;
+  font-size: 2.5em;
   font-weight: ${(props) => props.theme.fonts.weight.bold};
   color: ${(props) => props.theme.colors.white};
 
   ${up('md')} {
     flex-direction: row;
-    font-size: 1.5rem;
+    font-size: 1.5em;
     color: ${(props) => props.theme.colors.main};
   }
 
   ${up('lg')} {
-    font-size: 1.6rem;
+    font-size: 1.6em;
   }
 
   ${up('xl')} {
-    font-size: 1.8rem;
+    font-size: 1.8em;
   }
 `
 export const NavItem = styled.li`
