@@ -5,6 +5,12 @@ import { Row, Col } from '../../Grid/grid.components'
 import { ButtonList } from '../../Buttons/ButtonList'
 import Github from '../../../images/icons/hero/github.svg'
 import Linkedin from '../../../images/icons/hero/linkedin.svg'
+import { Container } from '../../Layout/layout.components'
+
+export const HeroContainer = styled(Container)`
+  display: flex;
+  flex-grow: 1;
+`
 
 export const HeroRow = styled(Row)`
   justify-content: space-around;

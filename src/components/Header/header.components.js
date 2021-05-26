@@ -8,14 +8,14 @@ export const Header = styled.header`
   top: 0;
   z-index: 9999;
   border-bottom: 0.1rem solid ${(props) => props.theme.colors.borders};
-  background-color: ${(props) => props.theme.colors.background};
+  background-color: ${(props) => props.theme.colors.white};
   transition: all 0.4s linear;
   ${({ scrollable }) =>
     scrollable > 0 &&
     css`
       font-size: 0.8rem;
       background-color: ${(props) => props.theme.colors.white};
-      box-shadow: 0px 8px 4px -4px rgba(9, 9, 9, 0.4);
+      //box-shadow: 0px 8px 4px -4px rgba(9, 9, 9, 0.4);
     `}
 `
 export const HeaderInner = styled.div`

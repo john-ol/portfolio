@@ -1,11 +1,12 @@
 import styled from 'styled-components'
 import { up } from 'styled-breakpoints'
 import { motion } from 'framer-motion'
+
 export const Row = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 1rem 0;
+  padding: 1.5rem 0;
 
   ${up('sm')} {
     padding: 0;

@@ -3,8 +3,8 @@ import { navigate } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import { useHeroImg } from '../components/Pages/Index/index.queries'
 import { Layout } from '../components/Layout/Layout'
-import { Container } from '../components/Layout/layout.components'
 import {
+  HeroContainer,
   HeroRow,
   InfoCol,
   ImageCol,
@@ -32,7 +32,7 @@ export default function Home() {
 
   return (
     <Layout>
-      <Container flex grow>
+      <HeroContainer>
         <HeroRow>
           <InfoCol
             variants={InfoColAnimation}
@@ -81,7 +81,7 @@ export default function Home() {
             </HeroImage>
           </ImageCol>
         </HeroRow>
-      </Container>
+      </HeroContainer>
     </Layout>
   )
 }

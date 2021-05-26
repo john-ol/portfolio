@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 
 export const SiteContainer = styled.div`
   min-height: 100vh;
@@ -12,18 +12,6 @@ export const Container = styled.div`
   width: 100%;
   margin: 0 auto;
   padding: 0 1.5rem;
-
-  ${({ flex }) =>
-    flex &&
-    css`
-      display: flex;
-    `}
-
-  ${({ grow }) =>
-    grow &&
-    css`
-      flex-grow: 1;
-    `}
 `
 
 export const Main = styled.main`

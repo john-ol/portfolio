@@ -32,7 +32,7 @@ export const NavList = styled.ul`
   align-items: center;
   justify-content: space-evenly;
   text-transform: uppercase;
-  font-size: 2.5em;
+  font-size: 2.5rem;
   font-weight: ${(props) => props.theme.fonts.weight.bold};
   color: ${(props) => props.theme.colors.white};
 

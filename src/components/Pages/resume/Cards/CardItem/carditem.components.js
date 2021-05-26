@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import { motion } from 'framer-motion'
 
 export const Card = styled(motion.div)`
+  width: 100%;
   padding: 1rem 1.2rem;
   background-color: ${(props) => props.theme.colors.white};
   border-radius: 0.5rem;
@@ -16,7 +17,7 @@ export const CardHeader = styled.div`
 `
 
 export const CardTitle = styled.h2`
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 `
 
 export const CardIcon = styled.div`
@@ -25,8 +26,8 @@ export const CardIcon = styled.div`
   justify-content: center;
   > svg {
     fill: ${(props) => props.theme.colors.icons};
-    height: 2.3rem;
-    width: 2.3rem;
+    height: 2.5rem;
+    width: 2.5rem;
   }
 `
 

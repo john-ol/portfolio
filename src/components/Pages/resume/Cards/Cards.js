@@ -13,7 +13,6 @@ import { Experience } from './experience.card/Experience'
 import { Education } from './education.card/Education'
 import { Info } from './info.card/Info'
 import { Summary } from './summary.card/Summary'
-import { navigate } from 'gatsby'
 
 export const Cards = () => {
   return (
