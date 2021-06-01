@@ -18,7 +18,7 @@ export const AboutRow = styled(Row)`
 
 export const InfoCol = styled(Col)`
   background-color: ${(props) => props.theme.colors.white};
-  border-radius: 0.5rem;
+  border-radius: ${(props) => props.theme.other.cardradius};
   ${up('sm')} {
     align-items: center;
   }

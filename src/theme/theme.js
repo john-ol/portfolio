@@ -6,6 +6,10 @@ export const theme = {
     icons: '#0077b7',
     borders: '#e6e6e6',
     white: '#ffffff',
+    projects: {
+      personal: '#008c22',
+      webapp: '#0077b7',
+    },
   },
   fonts: {
     main: `Montserrat, sans-serif`,
@@ -20,5 +24,8 @@ export const theme = {
     md: '768px',
     lg: '992px',
     xl: '1200px',
+  },
+  other: {
+    cardradius: '0.5rem',
   },
 }
