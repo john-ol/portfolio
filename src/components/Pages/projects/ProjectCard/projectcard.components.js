@@ -1,14 +1,15 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
+import { ProjectTag } from '../../../Project-tag/project-tag.components'
 
 export const Card = styled.div`
   position: relative;
   cursor: pointer;
   width: 100%;
   border-radius: ${(props) => props.theme.other.cardradius};
-  transition: all 0.1s linear;
+  transition: all 0.1s ease-in;
   :hover {
     transform: scale(1.03);
-    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 5px -2px rgba(0, 0, 0, 0.27);
   }
   :after {
     content: '';
@@ -45,25 +46,11 @@ export const CardTitle = styled.h3`
   color: ${(props) => props.theme.colors.white};
 `
 
-export const ProjectType = styled.div`
+export const AllProjectTags = styled(ProjectTag)`
   position: absolute;
   top: 0;
   right: 0;
   z-index: 1;
-  display: inline-block;
-  padding: 0.7rem 1rem;
-  background-color: ${(props) => props.theme.colors.projects.webapp};
-  border-radius: 0.3rem;
-  ${({ type }) =>
-    type === 'Personal site' &&
-    css`
-      background-color: ${(props) => props.theme.colors.projects.personal};
-    `}
-`
-
-export const ProjectTypeText = styled.p`
-  color: ${(props) => props.theme.colors.white};
   font-size: 1rem;
-  text-transform: uppercase;
-  font-weight: ${(props) => props.theme.fonts.weight.bold};
+  padding: 0.8rem 1rem;
 `
