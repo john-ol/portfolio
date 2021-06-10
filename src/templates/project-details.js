@@ -7,10 +7,13 @@ import {
   ProjectRow,
   InfoCol,
   ImageCol,
+  ImageTitle,
+  ProjectImage,
 } from '../components/Pages/project-details/project-details.components'
 import { ProjectDetailsCard } from '../components/Pages/project-details/ProjectDetailsCard/ProjectDetailsCard'
 
 export default function ProjectDetails({ data }) {
+  const { title } = data.markdownRemark.frontmatter
   const image = getImage(
     data.markdownRemark.frontmatter.featured.childImageSharp
   )
@@ -23,9 +26,10 @@ export default function ProjectDetails({ data }) {
             <ProjectDetailsCard data={data.markdownRemark} />
           </InfoCol>
           <ImageCol>
-            {/* <ProjectImage>
+            <ImageTitle>Images:</ImageTitle>
+            <ProjectImage>
               <GatsbyImage image={image} alt={title} />
-            </ProjectImage> */}
+            </ProjectImage>
           </ImageCol>
         </ProjectRow>
       </ProjectContainer>
@@ -41,10 +45,13 @@ export const query = graphql`
         type
         demo
         sourceCode
-        stack
-        frontEnd {
-          icon
+        stack {
           title
+          tech {
+            src
+            title
+            link
+          }
         }
         featured {
           childImageSharp {

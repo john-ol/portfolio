@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { Link } from 'gatsby'
 
 export const DemoSourceItem = styled.div`
   display: flex;
@@ -26,7 +25,7 @@ export const DemoSourceContent = styled.div`
   }
 `
 
-export const DemoSourceLink = styled(Link)`
+export const DemoSourceLink = styled.a`
   position: relative;
   display: inline-block;
   :after {

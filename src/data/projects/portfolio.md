@@ -7,11 +7,20 @@ thumb: '../../images/projects/thumb/portfolio-thumb.jpg'
 featured: '../../images/projects/featured/portfolio-featured.jpg'
 sourceCode: 'https://github.com/john-ol/portfolio'
 date: 2021-08-01T00:00:00+00:00
-stack: ['Front-end', 'Back-end']
-frontEnd:
+stack:
   [
-    { title: 'react', icon: 'reactIcon' },
-    { title: 'material', icon: 'materialIcon' },
+    {
+      tech:
+        [
+          { title: 'Gatsby', src: '/project-icons/gatsby.svg' },
+          {
+            title: 'Styled components',
+            src: '/project-icons/styled-components.svg',
+          },
+          { title: 'Framer motion', src: '/project-icons/framer.svg' },
+        ],
+      title: 'Front-end:',
+    },
   ]
 ---
 

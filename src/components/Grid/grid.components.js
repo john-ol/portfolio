@@ -8,10 +8,6 @@ export const Row = styled.div`
   flex-direction: column;
   padding: 1.5rem 0;
 
-  ${up('sm')} {
-    padding: 0;
-  }
-
   ${up('md', 'landscape')} {
     flex-direction: row;
   }

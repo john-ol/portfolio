@@ -35,7 +35,7 @@ export const ImageCol = styled(Col)`
   }
 `
 export const AboutImage = styled.div`
-  margin: 2rem 0;
+  margin-top: 2rem;
   max-width: 64%;
 `
 export const CardHeader = styled.div`

@@ -12,7 +12,7 @@ export const DemoSource = ({ children, link, icon }) => {
       <DemoSourceTitle>{children}</DemoSourceTitle>
       <DemoSourceContent>
         {icon}
-        <DemoSourceLink to={link} target='_blank'>
+        <DemoSourceLink href={link} target='_blank'>
           {link}
         </DemoSourceLink>
       </DemoSourceContent>

@@ -3,6 +3,9 @@ import { DemoSource } from './DemoSource/DemoSource'
 import {
   Card,
   CardHeader,
+  HeaderLeft,
+  LinkBack,
+  IconBack,
   CardTitle,
   ProjectDetailTag,
   CardBody,
@@ -17,17 +20,21 @@ import { Stack } from './Stack/Stack'
 
 export const ProjectDetailsCard = ({ data }) => {
   const { html } = data
-  const { title, type, demo, sourceCode, stack, frontEnd } = data.frontmatter
-  console.log(stack, frontEnd)
-
+  const { title, type, demo, sourceCode, stack } = data.frontmatter
   return (
     <Card>
       <CardHeader>
-        <CardTitle>{title}</CardTitle>
+        <HeaderLeft>
+          <LinkBack to='/projects'>
+            <IconBack />
+          </LinkBack>
+          <CardTitle>{title}</CardTitle>
+        </HeaderLeft>
         <ProjectDetailTag type={type}>{type}</ProjectDetailTag>
       </CardHeader>
       <CardBody>
         <ProjectDescription dangerouslySetInnerHTML={{ __html: html }} />
+
         <ProjectDemoSource>
           {demo && (
             <DemoSource link={demo} icon={<SiteIcon />}>
@@ -39,7 +46,7 @@ export const ProjectDetailsCard = ({ data }) => {
           </DemoSource>
         </ProjectDemoSource>
         <ProjectStack>
-          <Stack frontEnd='frontEnd' />
+          <Stack stack={stack} />
         </ProjectStack>
       </CardBody>
     </Card>
