@@ -12,12 +12,25 @@ stack:
     {
       tech:
         [
-          { title: 'Gatsby', src: '/project-icons/gatsby.svg' },
           {
-            title: 'Styled components',
-            src: '/project-icons/styled-components.svg',
+            title: 'Gatsby',
+            src: '/project-icons/gatsby.svg',
+            link: 'https://www.gatsbyjs.com/',
           },
-          { title: 'Framer motion', src: '/project-icons/framer.svg' },
+          {
+            title: 'Styled-components',
+            src: '/project-icons/styled-components.svg',
+            link: 'https://styled-components.com/',
+          },
+          {
+            title: 'Styled-breackpoints',
+            link: 'https://www.npmjs.com/package/styled-breakpoints',
+          },
+          {
+            title: 'Framer motion',
+            src: '/project-icons/framer.svg',
+            link: 'https://www.framer.com/api/motion/',
+          },
         ],
       title: 'Front-end:',
     },

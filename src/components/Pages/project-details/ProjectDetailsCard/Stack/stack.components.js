@@ -40,6 +40,7 @@ export const GridItem = styled.div`
   border-radius: ${(props) => props.theme.other.cardradius};
   padding: 1.8rem;
   height: 100%;
+  min-height: 6.5;
   transition: box-shadow 0.2s ease-in-out;
   :hover {
     transition: box-shadow 0.2s ease-in-out;
@@ -50,7 +51,7 @@ export const GridItem = styled.div`
     padding: 1.4rem;
   }
 
-  ${up('lg')} {
+  ${up('md')} {
     padding: 1rem;
   }
 `
@@ -74,6 +75,6 @@ export const ItemTitle = styled.p`
 `
 export const ItemIcon = styled.img`
   max-width: 100%;
-  height: auto;
+  height: 100%;
   transition: transform 0.2s ease-in-out;
 `

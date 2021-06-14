@@ -11,7 +11,7 @@ export const ProjectContainer = styled(Container)`
 `
 
 export const ProjectRow = styled(Row)`
-  ${up('md', 'landscape')} {
+  ${up('lg', 'landscape')} {
     flex-direction: row-reverse;
     align-items: center;
   }
@@ -28,26 +28,30 @@ export const ImageCol = styled(Col)`
     padding: 2rem;
   }
 
-  ${up('md', 'landscape')} {
+  ${up('lg', 'landscape')} {
     margin-top: 0;
     padding: 0;
-    margin-right: 2.5rem;
+    margin-right: 3rem;
     flex-direction: row;
-    align-items: center;
+    justify-content: center;
     background-color: transparent;
   }
 `
 export const ImageTitle = styled.h3`
   font-size: 1.2rem;
   margin-bottom: 1rem;
-  ${up('md', 'landscape')} {
+  ${up('lg')} {
     display: none;
   }
 `
-export const ProjectImage = styled.div``
+export const ProjectImage = styled.div`
+  ${up('xl')} {
+    max-width: 80%;
+  }
+`
 
 export const InfoCol = styled(Col)`
-  ${up('md', 'landscape')} {
-    margin-left: 2.5rem;
+  ${up('lg', 'landscape')} {
+    margin-left: 3rem;
   }
 `
