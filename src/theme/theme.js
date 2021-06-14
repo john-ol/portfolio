@@ -23,6 +23,7 @@ export const theme = {
     sm: '576px',
     md: '768px',
     lg: '992px',
+    lgx: '1100px',
     xl: '1200px',
   },
   other: {
