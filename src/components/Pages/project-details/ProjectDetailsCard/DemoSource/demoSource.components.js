@@ -1,27 +1,52 @@
 import styled from 'styled-components'
+import { up } from 'styled-breakpoints'
 
-export const DemoSourceItem = styled.div`
+export const DemoSourceItem = styled.section`
   display: flex;
   flex-direction: column;
   :not(:last-child) {
-    margin-bottom: 1.8rem;
+    margin-bottom: 2rem;
   }
 `
 
 export const DemoSourceTitle = styled.h3`
-  font-size: 1.2rem;
-  margin-bottom: 0.6rem;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+
+  ${up('sm')} {
+    font-size: 1.5rem;
+  }
+
+  ${up('md')} {
+    font-size: 1.7rem;
+  }
 `
 
 export const DemoSourceContent = styled.div`
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   display: flex;
   align-items: center;
   svg {
     fill: ${(props) => props.theme.colors.projects.webapp};
-    width: 1.8em;
-    height: 1.8em;
+    width: 1.6em;
+    height: 1.6em;
     margin-right: 1.2rem;
+
+    ${up('sm')} {
+      font-size: 1.3rem;
+    }
+
+    ${up('md')} {
+      font-size: 1.7rem;
+    }
+  }
+
+  ${up('sm')} {
+    font-size: 1.3rem;
+  }
+
+  ${up('md')} {
+    font-size: 1.6rem;
   }
 `
 

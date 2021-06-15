@@ -25,6 +25,7 @@ export const theme = {
     lg: '992px',
     lgx: '1100px',
     xl: '1200px',
+    xxl: '1400px',
   },
   other: {
     cardradius: '0.5rem',

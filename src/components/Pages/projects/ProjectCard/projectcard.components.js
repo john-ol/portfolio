@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { up } from 'styled-breakpoints'
 import { ProjectTag } from '../../../Project-tag/project-tag.components'
 
 export const Card = styled.div`
@@ -7,10 +8,12 @@ export const Card = styled.div`
   width: 100%;
   border-radius: ${(props) => props.theme.other.cardradius};
   transition: all 0.1s ease-in;
+
   :hover {
     transform: scale(1.03);
     box-shadow: 0px 8px 5px -2px rgba(0, 0, 0, 0.27);
   }
+
   :after {
     content: '';
     position: absolute;
@@ -38,8 +41,20 @@ export const CardInfo = styled.div`
   left: 0;
   bottom: 1rem;
   padding: 0 1.2rem;
-  font-size: 1.9rem;
+  font-size: 1.6rem;
   z-index: 1;
+
+  ${up('sm')} {
+    font-size: 1.4rem;
+  }
+
+  ${up('md')} {
+    font-size: 1.6rem;
+  }
+
+  ${up('lg')} {
+    font-size: 1.8rem;
+  }
 `
 
 export const CardTitle = styled.h3`
@@ -52,5 +67,14 @@ export const AllProjectTags = styled(ProjectTag)`
   right: 0;
   z-index: 1;
   font-size: 1rem;
-  padding: 0.8rem 1rem;
+  padding: 0.4rem 1rem;
+
+  ${up('md')} {
+    padding: 0.6rem 1rem;
+  }
+
+  ${up('lg')} {
+    padding: 0.8rem 1.2rem;
+    font-size: 1.2rem;
+  }
 `

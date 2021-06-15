@@ -12,7 +12,12 @@ export const ProjectsGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 3rem;
-  ${up('lg')} {
+
+  ${up('sm')} {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  ${up('md', 'landscape')} {
     grid-template-columns: repeat(3, 1fr);
   }
 `

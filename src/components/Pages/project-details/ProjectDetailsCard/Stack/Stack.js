@@ -6,7 +6,7 @@ import {
   GridItem,
   TechLink,
   ItemTitle,
-  ItemIcon,
+  LogoIcon,
 } from './stack.components'
 
 export const Stack = ({ stack }) => {
@@ -19,11 +19,9 @@ export const Stack = ({ stack }) => {
             {item.tech.map((tech) => (
               <TechLink href={tech.link} key={tech.title} target='_blank'>
                 <GridItem key={tech.title}>
-                  {!tech.src && (
-                    <ItemTitle visible={tech.src}>{tech.title}</ItemTitle>
-                  )}
+                  <LogoIcon src={tech.src} alt={tech.title} />
 
-                  {tech.src && <ItemIcon src={tech.src} alt={tech.title} />}
+                  <ItemTitle>{tech.title}</ItemTitle>
                 </GridItem>
               </TechLink>
             ))}

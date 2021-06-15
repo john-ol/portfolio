@@ -23,10 +23,6 @@ stack:
             link: 'https://styled-components.com/',
           },
           {
-            title: 'Styled-breackpoints',
-            link: 'https://www.npmjs.com/package/styled-breakpoints',
-          },
-          {
             title: 'Framer motion',
             src: '/project-icons/framer.svg',
             link: 'https://www.framer.com/api/motion/',

@@ -19,9 +19,14 @@ stack:
             link: 'https://github.com/facebook/react',
           },
           {
-            title: 'Redux/ Redux-thunk',
+            title: 'Redux',
             src: '/project-icons/redux.svg',
             link: 'https://redux.js.org/',
+          },
+          {
+            title: 'Redux-thunk',
+            src: '/project-icons/redux.svg',
+            link: 'https://github.com/reduxjs/redux-thunk',
           },
           {
             title: 'Material-ui',
@@ -39,23 +44,31 @@ stack:
     {
       tech:
         [
-          { title: 'Express', link: 'https://expressjs.com/' },
+          {
+            title: 'Express',
+            src: '/project-icons/express.svg',
+            link: 'https://expressjs.com/',
+          },
           {
             title: 'Express validator',
-
+            src: '/project-icons/express-validator.svg',
             link: 'https://express-validator.github.io/docs/',
           },
           {
             title: 'MongoDB',
             src: '/project-icons/mongo-db.svg',
-            link: 'https://www.mongodb.com/',
+            link: 'https://github.com/mongodb/mongo',
           },
           {
             title: 'JSON webtoken',
             src: '/project-icons/jwt.svg',
             link: 'https://jwt.io/',
           },
-          { title: 'BcryptJs', link: 'https://www.npmjs.com/package/bcryptjs' },
+          {
+            title: 'BcryptJs',
+            src: '/project-icons/bcrypt-js.svg',
+            link: 'https://github.com/dcodeIO/bcrypt.js/',
+          },
         ],
       title: 'Back-end:',
     },

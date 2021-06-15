@@ -21,7 +21,9 @@ export const AboutRow = styled(Row)`
 `
 
 export const InfoCol = styled(Col)`
-  background-color: ${(props) => props.theme.colors.white};
+  ${up('md', 'landscape')} {
+    background-color: ${(props) => props.theme.colors.white};
+  }
 `
 export const ImageCol = styled(Col)`
   justify-content: center;
@@ -57,7 +59,7 @@ export const AboutImage = styled.div`
   }
 `
 
-export const AboutCard = styled.div`
+export const AboutCard = styled.section`
   width: 100%;
   padding: 1.5rem 0;
   display: flex;
@@ -68,9 +70,13 @@ export const AboutCard = styled.div`
     justify-content: center;
     border-left: 0.1rem solid ${(props) => props.theme.colors.borders};
   }
+
+  ${up('xl')} {
+    padding: 1.5rem 5rem;
+  }
 `
 
-export const CardHeader = styled.div`
+export const CardHeader = styled.section`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -97,9 +103,13 @@ export const CardHeader = styled.div`
     padding-bottom: 1.5rem;
     margin-bottom: 1.5rem;
   }
+
+  ${up('xl')} {
+    margin-bottom: 2rem;
+  }
 `
 
-export const CardTitle = styled.p`
+export const CardTitle = styled.h1`
   font-size: 1.6rem;
   font-weight: ${(props) => props.theme.fonts.weight.bold};
 
@@ -158,42 +168,38 @@ export const CardText = styled.div`
 
   ${up('md', 'landscape')} {
     margin-bottom: 1rem;
+    font-size: 1.3rem;
+    line-height: 1.6;
+  }
+  ${up('sm', 'portrait')} {
+    font-size: 1.5rem;
+  }
+
+  ${up('lgx', 'landscape')} {
+    font-size: 1.4rem;
+    line-height: 1.7;
+  }
+
+  ${up('xl')} {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    text-indent: 2rem;
+  }
+
+  ${up('xxl')} {
+    font-size: 1.5rem;
+    line-height: 2;
   }
 
   p {
     text-indent: 1.4rem;
-
-    ${up('sm')} {
-      font-size: 1.5rem;
-    }
-
-    ${up('md')} {
-      font-size: 1.6rem;
-      text-align: left;
-    }
-
-    ${up('md', 'landscape')} {
-      font-size: 1.3rem;
-      line-height: 1.6;
-    }
-
-    ${up('lgx', 'landscape')} {
-      font-size: 1.4rem;
-      line-height: 1.7;
-    }
-
-    ${up('xl')} {
-      font-size: 1.7rem;
-      line-height: 1.8;
-      text-indent: 2rem;
-    }
   }
 `
 
 export const CardSign = styled.p`
   font-weight: ${(props) => props.theme.fonts.weight.light};
   font-style: italic;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   text-align: right;
   white-space: pre-line;
 

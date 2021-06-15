@@ -4,54 +4,59 @@ import { Container } from '../../Layout/layout.components'
 import { Col, Row } from '../../Grid/grid.components'
 
 export const ProjectContainer = styled(Container)`
+  display: flex;
+  flex-grow: 1;
+  background-color: ${(props) => props.theme.colors.white};
+
   ${up('md', 'landscape')} {
-    display: flex;
-    flex-grow: 1;
+    padding: 0;
+    background-color: transparent;
   }
 `
 
 export const ProjectRow = styled(Row)`
-  ${up('lg', 'landscape')} {
+  ${up('md', 'landscape')} {
     flex-direction: row-reverse;
-    align-items: center;
   }
 `
 
 export const ImageCol = styled(Col)`
-  padding: 1rem;
   flex-direction: column;
-  margin-top: 1.5rem;
-  background-color: ${(props) => props.theme.colors.white};
-  border-radius: ${(props) => props.theme.other.cardradius};
 
-  ${up('md')} {
-    padding: 2rem;
-  }
-
-  ${up('lg', 'landscape')} {
-    margin-top: 0;
-    padding: 0;
-    margin-right: 3rem;
-    flex-direction: row;
+  ${up('md', 'landscape')} {
+    margin-bottom: 0;
+    align-items: center;
     justify-content: center;
-    background-color: transparent;
   }
 `
 export const ImageTitle = styled.h3`
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   margin-bottom: 1rem;
-  ${up('lg')} {
+  padding-top: 1.2rem;
+  border-top: 0.1rem solid ${(props) => props.theme.colors.borders};
+
+  ${up('sm')} {
+    font-size: 1.5rem;
+  }
+
+  ${up('md')} {
+    font-size: 1.7rem;
+  }
+
+  ${up('md', 'landscape')} {
     display: none;
   }
 `
 export const ProjectImage = styled.div`
-  ${up('xl')} {
-    max-width: 80%;
+  margin-bottom: 1.5rem;
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.2);
+  ${up('md', 'landscape')} {
+    max-width: 90%;
   }
 `
 
 export const InfoCol = styled(Col)`
-  ${up('lg', 'landscape')} {
-    margin-left: 3rem;
+  ${up('md', 'landscape')} {
+    background-color: ${(props) => props.theme.colors.white};
   }
 `

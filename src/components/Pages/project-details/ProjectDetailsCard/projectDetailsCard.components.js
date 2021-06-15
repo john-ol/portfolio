@@ -6,13 +6,19 @@ import { ProjectTag } from '../../../Project-tag/project-tag.components'
 import Back from '../../../../images/icons/project-details/back.svg'
 
 export const Card = styled.div`
-  padding: 1rem;
   width: 100%;
-  background-color: ${(props) => props.theme.colors.white};
-  border-radius: ${(props) => props.theme.other.cardradius};
+  padding: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
 
-  ${up('md')} {
-    padding: 2rem;
+  ${up('md', 'landscape')} {
+    padding: 1.5rem 3rem;
+    justify-content: center;
+    border-left: 0.1rem solid ${(props) => props.theme.colors.borders};
+  }
+
+  ${up('lg')} {
+    padding: 1.5rem 6rem;
   }
 `
 
@@ -33,20 +39,44 @@ export const LinkBack = styled(Link)`
   margin-right: 1.5rem;
 `
 export const IconBack = styled(Back)`
-  width: 1.6rem;
-  height: 1.6rem;
+  width: 1.4em;
+  height: 1.4em;
+
+  ${up('sm')} {
+    font-size: 1.2rem;
+  }
+
+  ${up('md')} {
+    font-size: 1.4rem;
+  }
 `
 
 export const CardTitle = styled.h1`
-  font-size: 1.8rem;
+  font-size: 1.6rem;
+
+  ${up('sm')} {
+    font-size: 1.8rem;
+  }
+
+  ${up('md')} {
+    font-size: 2rem;
+  }
 `
 
 export const ProjectDetailTag = styled(ProjectTag)`
   padding: 0.6em 0.8em;
+
+  ${up('sm')} {
+    font-size: 1.1rem;
+  }
+
+  ${up('md')} {
+    font-size: 1.2rem;
+  }
 `
 
 export const CardBody = styled.section`
-  section {
+  > section {
     padding: 1.2rem 0;
     :not(:last-child) {
       border-bottom: 0.1rem solid ${(props) => props.theme.colors.borders};
