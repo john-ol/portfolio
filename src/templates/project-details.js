@@ -13,9 +13,9 @@ import {
 import { ProjectDetailsCard } from '../components/Pages/project-details/ProjectDetailsCard/ProjectDetailsCard'
 
 export default function ProjectDetails({ data }) {
-  const { title } = data.markdownRemark.frontmatter
+  const { title } = data.markdownRemark.frontmatter.projects
   const image = getImage(
-    data.markdownRemark.frontmatter.featured.childImageSharp
+    data.markdownRemark.frontmatter.projects.featured.childImageSharp
   )
 
   return (
@@ -39,23 +39,25 @@ export default function ProjectDetails({ data }) {
 
 export const query = graphql`
   query ProjectDetails($id: String) {
-    markdownRemark(frontmatter: { path: { eq: $id } }) {
+    markdownRemark(frontmatter: { projects: { path: { eq: $id } } }) {
       frontmatter {
-        title
-        type
-        demo
-        sourceCode
-        stack {
+        projects {
           title
-          tech {
-            src
+          type
+          demo
+          sourceCode
+          stack {
             title
-            link
+            tech {
+              src
+              title
+              link
+            }
           }
-        }
-        featured {
-          childImageSharp {
-            gatsbyImageData(placeholder: BLURRED)
+          featured {
+            childImageSharp {
+              gatsbyImageData(placeholder: BLURRED)
+            }
           }
         }
       }

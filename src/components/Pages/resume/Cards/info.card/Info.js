@@ -1,5 +1,8 @@
 import React from 'react'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+import { useInfo } from './info.queries'
 import {
+  CardIcon,
   InfoSection,
   Avatar,
   Information,
@@ -7,55 +10,43 @@ import {
   Prof,
   ContactInfo,
   ContactInfoItem,
-  LocationIcon,
-  PhoneIcon,
-  MailIcon,
-  GithubIcon,
-  LocationText,
-  PhoneText,
-  MailText,
-  GithubLink,
-  InfoCard,
+  ItemIcon,
+  ItemText,
+  ItemLink,
 } from './info.components'
-import { GatsbyImage, getImage } from 'gatsby-plugin-image'
-import { useAvatar } from '../../resume.queries'
-import { encryptEmail } from './encrypt.email'
+import { CardItem } from '../CardItem/CardItem'
 
-export const Info = () => {
-  const { file } = useAvatar()
+export const GeneralInfo = () => {
+  const { markdownRemark, file } = useInfo()
+  const { area, title, body } = markdownRemark.frontmatter.resume
+  const { name, prof, contact } = body.generalInfo
   const image = getImage(file.childImageSharp)
 
   return (
-    <InfoCard>
+    <CardItem area={area} title={title} icon={<CardIcon />}>
       <InfoSection>
         <Avatar>
           <GatsbyImage image={image} alt={file.name} />
         </Avatar>
         <Information>
-          <Name>Evgeniy Oleinikov</Name>
-          <Prof>Junior Front-end developer</Prof>
+          <Name>{name}</Name>
+          <Prof>{prof}</Prof>
           <ContactInfo>
-            <ContactInfoItem>
-              <LocationIcon />
-              <LocationText>Kyiv</LocationText>
-            </ContactInfoItem>
-            <ContactInfoItem>
-              <PhoneIcon />
-              <PhoneText>+38(073)-419-34-31</PhoneText>
-            </ContactInfoItem>
-            <ContactInfoItem>
-              <MailIcon />
-              <MailText dangerouslySetInnerHTML={{ __html: encryptEmail() }} />
-            </ContactInfoItem>
-            <ContactInfoItem>
-              <GithubIcon />
-              <GithubLink href='https://github.com/john-ol' target='blank'>
-                https://github.com/john-ol
-              </GithubLink>
-            </ContactInfoItem>
+            {contact.map((el) => (
+              <ContactInfoItem key={el.text}>
+                <ItemIcon src={el.icon} alt={el.text} />
+                {el.link ? (
+                  <ItemLink href={el.text} target='_blank'>
+                    {el.text}
+                  </ItemLink>
+                ) : (
+                  <ItemText>{el.text}</ItemText>
+                )}
+              </ContactInfoItem>
+            ))}
           </ContactInfo>
         </Information>
       </InfoSection>
-    </InfoCard>
+    </CardItem>
   )
 }

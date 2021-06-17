@@ -16,16 +16,21 @@ export default function Projects() {
       <ProjectsContainer>
         <ProjectsGrid>
           {nodes.map((project) => (
-            <Link to={`/projects/${project.frontmatter.path}`} key={project.id}>
+            <Link
+              to={`/projects/${project.frontmatter.projects.path}`}
+              key={project.id}
+            >
               <ProjectCard
-                title={project.frontmatter.title}
+                title={project.frontmatter.projects.title}
                 image={
                   <GatsbyImage
-                    image={getImage(project.frontmatter.thumb.childImageSharp)}
-                    alt={project.frontmatter.title}
+                    image={getImage(
+                      project.frontmatter.projects.thumb.childImageSharp
+                    )}
+                    alt={project.frontmatter.projects.title}
                   />
                 }
-                type={project.frontmatter.type}
+                type={project.frontmatter.projects.type}
               />
             </Link>
           ))}

@@ -1,3 +1,4 @@
 import styled from 'styled-components'
+import Education from '../../../../../images/icons/resume/education.svg'
 
-export const EducationCard = styled.div``
+export const CardIcon = styled(Education)``

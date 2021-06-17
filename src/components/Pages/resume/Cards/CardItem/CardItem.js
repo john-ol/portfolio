@@ -7,9 +7,9 @@ import {
   CardContent,
 } from './carditem.components.js'
 
-export const CardItem = ({ title, icon, children, variants }) => {
+export const CardItem = ({ title, icon, children, variants, area }) => {
   return (
-    <Card variants={variants} initial='hidden' animate='visible'>
+    <Card area={area} variants={variants} initial='hidden' animate='visible'>
       <CardHeader>
         <CardTitle>{title}</CardTitle>
         <CardIcon>{icon}</CardIcon>

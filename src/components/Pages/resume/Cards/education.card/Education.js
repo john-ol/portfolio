@@ -1,25 +1,25 @@
 import React from 'react'
-import {
-  TimeLineSection,
-  TimeLineItem,
-  TimeLineTitle,
-  TimeLineText,
-} from '../timeline.components'
-import { EducationCard } from './education.components'
+import { useEducation } from './education.queries'
+import { CardItem } from '../CardItem/CardItem'
+import { CardIcon } from './education.components'
+import { TimeLineSection } from '../TimeLine/timeline.components'
+import { TimeLine } from '../TimeLine/TimeLine'
 
 export const Education = () => {
+  const { area, title, body } = useEducation()
+  console.log()
   return (
-    <EducationCard>
+    <CardItem area={area} title={title} icon={<CardIcon />}>
       <TimeLineSection>
-        <TimeLineItem date='20-07-1990'>
-          <TimeLineTitle>Computer science (bachelor)</TimeLineTitle>
-          <TimeLineText>National Transport University</TimeLineText>
-        </TimeLineItem>
-        <TimeLineItem date='20-07-1990'>
-          <TimeLineTitle>Computer science (master)</TimeLineTitle>
-          <TimeLineText>National Transport University</TimeLineText>
-        </TimeLineItem>
+        {body.education.map((el) => (
+          <TimeLine
+            key={el.subtitle}
+            date={el.date}
+            title={el.title}
+            subtitle={el.subtitle}
+          />
+        ))}
       </TimeLineSection>
-    </EducationCard>
+    </CardItem>
   )
 }

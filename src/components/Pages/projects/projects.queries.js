@@ -4,18 +4,20 @@ export const useProjects = () => {
   const data = useStaticQuery(graphql`
     query UseProjects {
       allMarkdownRemark(
+        sort: { fields: frontmatter___projects___date, order: DESC }
         filter: { frontmatter: { category: { eq: "projects" } } }
-        sort: { fields: frontmatter___date, order: DESC }
       ) {
         nodes {
           id
           frontmatter {
-            path
-            title
-            type
-            thumb {
-              childImageSharp {
-                gatsbyImageData(placeholder: TRACED_SVG)
+            projects {
+              path
+              title
+              type
+              thumb {
+                childImageSharp {
+                  gatsbyImageData(placeholder: TRACED_SVG)
+                }
               }
             }
           }

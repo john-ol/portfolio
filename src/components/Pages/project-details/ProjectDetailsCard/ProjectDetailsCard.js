@@ -20,7 +20,7 @@ import { Stack } from './Stack/Stack'
 
 export const ProjectDetailsCard = ({ data }) => {
   const { html } = data
-  const { title, type, demo, sourceCode, stack } = data.frontmatter
+  const { title, type, demo, sourceCode, stack } = data.frontmatter.projects
   return (
     <Card>
       <CardHeader>

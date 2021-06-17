@@ -1,37 +1,25 @@
 import React from 'react'
-import { ExperienceCard } from './experience.components'
-import {
-  TimeLineSection,
-  TimeLineItem,
-  TimeLineTitle,
-  TimeLineSubtitle,
-  TimeLineText,
-} from '../timeline.components'
+import { useExperience } from './experience.queries'
+import { CardItem } from '../CardItem/CardItem'
+import { CardIcon } from './experience.components'
+import { TimeLineSection } from '../TimeLine/timeline.components'
+import { TimeLine } from '../TimeLine/TimeLine'
+
 export const Experience = () => {
+  const { area, title, body } = useExperience()
   return (
-    <ExperienceCard>
+    <CardItem area={area} title={title} icon={<CardIcon />}>
       <TimeLineSection>
-        <TimeLineItem date='20-07-1990'>
-          <TimeLineTitle>Biologic.tv</TimeLineTitle>
-          <TimeLineSubtitle>Front-end developer</TimeLineSubtitle>
-          <TimeLineText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </TimeLineText>
-        </TimeLineItem>
-        <TimeLineItem date='20-07-1990'>
-          <TimeLineTitle>Biologic.tv</TimeLineTitle>
-          <TimeLineSubtitle>Front-end developer</TimeLineSubtitle>
-          <TimeLineText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </TimeLineText>
-        </TimeLineItem>
+        {body.experience.map((el) => (
+          <TimeLine
+            key={el.title}
+            date={el.date}
+            title={el.title}
+            subtitle={el.subtitle}
+            list={el.list}
+          />
+        ))}
       </TimeLineSection>
-    </ExperienceCard>
+    </CardItem>
   )
 }
