@@ -1,6 +1,6 @@
 import React from 'react'
-import { Button } from '../../Buttons/Button/Button'
 import { NavBar, NavList, NavItem, NavLink } from './nav.components'
+import { LinkButton } from '../../Buttons/LinkButton/linkButton.components'
 
 export const Nav = ({ open }) => {
   return (
@@ -22,9 +22,9 @@ export const Nav = ({ open }) => {
           </NavLink>
         </NavItem>
         <NavItem>
-          <Button variant='secondary' border={0.2}>
+          <LinkButton to='/contact' variant='secondary' border={0.2}>
             Contact
-          </Button>
+          </LinkButton>
         </NavItem>
       </NavList>
     </NavBar>

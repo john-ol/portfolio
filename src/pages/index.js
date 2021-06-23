@@ -1,5 +1,4 @@
 import React from 'react'
-import { navigate } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import { useHeroImg } from '../components/Pages/Index/index.queries'
 import { Layout } from '../components/Layout/Layout'
@@ -19,12 +18,12 @@ import {
   ButtonListHero,
   HeroImage,
 } from '../components/Pages/Index/index.components'
-import { Button } from '../components/Buttons/Button/Button'
 import {
   socialIconsAnimate,
   InfoColAnimation,
   ImageColAnimation,
 } from '../components/Pages/Index/index.animations'
+import { LinkButton } from '../components/Buttons/LinkButton/linkButton.components'
 
 export default function Home() {
   const { file } = useHeroImg()
@@ -65,10 +64,12 @@ export default function Home() {
               </SocialIcon>
             </SocialIconList>
             <ButtonListHero>
-              <Button variant='primary' onClick={() => navigate('/resume')}>
+              <LinkButton to='/resume' variant='primary'>
                 See my resume
-              </Button>
-              <Button variant='primary'>Hire me</Button>
+              </LinkButton>
+              <LinkButton to='/contact' variant='primary'>
+                Hire me
+              </LinkButton>
             </ButtonListHero>
           </InfoCol>
           <ImageCol

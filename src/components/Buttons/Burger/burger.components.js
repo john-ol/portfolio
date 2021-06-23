@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components'
 import { up } from 'styled-breakpoints'
-import { Button } from '../Button'
+import { Button } from '../Button/button.components'
 
 export const BurgerButton = styled(Button)`
   padding: 0.4rem;
