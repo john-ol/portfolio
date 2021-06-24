@@ -16,7 +16,7 @@ import {
 
 export default function Contact() {
   const Alert = withReactContent(Swal)
-  //const recaptchaRef = useRef()
+  const recaptchaRef = useRef()
   const [token, setToken] = useState(null)
   const [formData, setFormData] = useState({
     name: '',
@@ -26,22 +26,20 @@ export default function Contact() {
 
   const submitHandler = (event) => {
     event.preventDefault()
+    if (!formData.name || !formData.email || !formData.message) {
+      return Alert.fire({
+        toast: true,
+        icon: 'error',
+        position: 'top',
+        showConfirmButton: false,
+        timer: 2000,
+        title: 'Please, fill all fields',
+      })
+    }
 
-    Alert.fire({
-      toast: true,
-      icon: 'error',
-      position: 'top',
-      showConfirmButton: false,
-      timer: 2000,
-      title: 'Please, fill all fields',
-    })
-
-    // if (!formData.name || !formData.email || !formData.message) {
-    //   return
-    // }
     setFormData({ name: '', email: '', message: '' })
     setToken(null)
-    //recaptchaRef.current.reset()
+    recaptchaRef.current.reset()
     console.log(token, formData)
   }
 
@@ -63,7 +61,7 @@ export default function Contact() {
       <ContactContainer>
         <ContactRow>
           <ContactForm>
-            <FormTitle>Write to me</FormTitle>
+            <FormTitle>Contact me</FormTitle>
             <Label>
               Name
               <Input
@@ -96,18 +94,18 @@ export default function Contact() {
                 onChange={changeHandler}
               />
             </Label>
-            {/* <ReCAPTCHA
+            <ReCAPTCHA
               ref={recaptchaRef}
               sitekey='6LffpVMbAAAAAJml8aLc5T6mIjdwOEz3RRm1H9Ic'
               onChange={reCaptchaChangeHandler}
               onExpired={() => {
                 recaptchaRef.current.reset()
               }}
-            /> */}
+            />
             <SendButton
               type='submit'
               variant='primary'
-              // disabled={!token}
+              disabled={!token}
               onClick={submitHandler}
             >
               Send message
