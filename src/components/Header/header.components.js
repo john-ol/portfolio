@@ -6,7 +6,7 @@ import IconLogo from '../../images/icons/logo.svg'
 export const Header = styled.header`
   position: sticky;
   top: 0;
-  z-index: 9999;
+  z-index: 1;
   border-bottom: 0.1rem solid ${(props) => props.theme.colors.borders};
   background-color: ${(props) => props.theme.colors.white};
   transition: all 0.4s linear;

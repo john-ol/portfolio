@@ -41,4 +41,14 @@ export const GlobalStyles = createGlobalStyle`
     text-decoration: none;
     color: inherit;
   }
+
+  .swal2-popup {
+  font-size: 1.6rem !important;
+  font-family: ${(props) => props.theme.fonts.main};
+  background-color: ${(props) => props.theme.colors.main} !important;
+  }
+
+  .swal2-popup.swal2-toast .swal2-title {
+    color: ${(props) => props.theme.colors.white} !important;
+  }
 `

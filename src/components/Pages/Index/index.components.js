@@ -193,6 +193,12 @@ export const ButtonListHero = styled(ButtonList)`
       }
     }
     box-shadow: 0px 7px 5px -3px rgba(43, 42, 44, 0.12);
+
+    :focus {
+      outline: none;
+      border-color: transparent;
+      box-shadow: 0px 0px 0px 3px rgba(0, 0, 0, 0.35);
+    }
   }
 
   ${up('sm')} {

@@ -8,6 +8,7 @@ export const BurgerButton = styled(Button)`
   width: 4rem;
   height: 4rem;
   border-radius: 0.3rem;
+  border: none;
 
   ${({ open }) =>
     open &&
