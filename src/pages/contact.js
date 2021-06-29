@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react'
-import ReCAPTCHA from 'react-google-recaptcha'
+import axios from 'axios'
+
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
 import { Layout } from './../components/Layout/Layout'
@@ -7,14 +8,18 @@ import {
   ContactContainer,
   ContactRow,
   ContactForm,
+  FormHeader,
   FormTitle,
+  FormRequired,
   Label,
   Input,
   TextArea,
+  Recaptcha,
   SendButton,
 } from '../components/Pages/contact/contact.components'
 
 export default function Contact() {
+  const url = process.env.GATSBY_API_URL
   const Alert = withReactContent(Swal)
   const recaptchaRef = useRef()
   const [token, setToken] = useState(null)
@@ -26,6 +31,7 @@ export default function Contact() {
 
   const submitHandler = (event) => {
     event.preventDefault()
+
     if (!formData.name || !formData.email || !formData.message) {
       return Alert.fire({
         toast: true,
@@ -36,11 +42,40 @@ export default function Contact() {
         title: 'Please, fill all fields',
       })
     }
+    const data = {
+      ...formData,
+      token,
+    }
 
+    axios
+      .post(url, data)
+      .then((res) =>
+        Alert.fire({
+          toast: true,
+          icon: 'success',
+          position: 'top',
+          showConfirmButton: false,
+          timer: 3000,
+          title: res.data.message,
+        })
+      )
+      .catch((err) =>
+        Alert.fire({
+          toast: true,
+          icon: 'error',
+          position: 'top',
+          showConfirmButton: false,
+          timer: 3000,
+          title: err.response.data.errors
+            ? err.response.data.errors
+                .map((el, i) => `${i + 1}. ${el.msg}.`)
+                .join('\n')
+            : err.response.data.message,
+        })
+      )
     setFormData({ name: '', email: '', message: '' })
     setToken(null)
-    recaptchaRef.current.reset()
-    console.log(token, formData)
+    //recaptchaRef.current.reset()
   }
 
   const changeHandler = (event) => {
@@ -55,46 +90,45 @@ export default function Contact() {
   const reCaptchaChangeHandler = (value) => {
     setToken(value)
   }
-
   return (
     <Layout>
       <ContactContainer>
         <ContactRow>
           <ContactForm>
-            <FormTitle>Contact me</FormTitle>
+            <FormHeader>
+              <FormTitle>Contact me</FormTitle>
+              <FormRequired>Required information*</FormRequired>
+            </FormHeader>
             <Label>
-              Name
+              Name*
               <Input
                 type='text'
                 name='name'
-                required='required'
-                placeholder='input your name'
+                placeholder='Name'
                 value={formData.name}
                 onChange={changeHandler}
               />
             </Label>
             <Label>
-              E-mail
+              E-mail*
               <Input
                 type='text'
                 name='email'
-                required='required'
-                placeholder='input your e-mail'
+                placeholder='E-mail'
                 value={formData.email}
                 onChange={changeHandler}
               />
             </Label>
             <Label>
-              Message
+              Message*
               <TextArea
                 name='message'
-                required='required'
-                placeholder='input your message'
+                placeholder='Your message'
                 value={formData.message}
                 onChange={changeHandler}
               />
             </Label>
-            <ReCAPTCHA
+            <Recaptcha
               ref={recaptchaRef}
               sitekey='6LffpVMbAAAAAJml8aLc5T6mIjdwOEz3RRm1H9Ic'
               onChange={reCaptchaChangeHandler}

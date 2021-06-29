@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components'
 import { up } from 'styled-breakpoints'
+import ReCAPTCHA from 'react-google-recaptcha'
 import { Container } from '../../Layout/layout.components'
 import { Row } from '../../Grid/grid.components'
 import { Button } from '../../Buttons/Button/button.components'
@@ -35,8 +36,20 @@ export const ContactForm = styled.form`
     width: 40rem;
   }
 `
+export const FormHeader = styled.div`
+  width: 100%;
+`
+export const FormTitle = styled.h1`
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+`
 
-export const FormTitle = styled.h1``
+export const FormRequired = styled.p`
+  text-align: left;
+  font-size: 1.2rem;
+  font-weight: ${(props) => props.theme.fonts.weight.light};
+`
 
 export const Label = styled.label`
   display: flex;
@@ -87,6 +100,13 @@ export const TextArea = styled.textarea`
   :focus {
     border: none;
     box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.15);
+  }
+`
+export const Recaptcha = styled(ReCAPTCHA)`
+  transform: scale(0.8);
+  ${up('sm')} {
+    margin-top: 1rem;
+    transform: scale(1.15);
   }
 `
 

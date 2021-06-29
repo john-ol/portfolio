@@ -43,7 +43,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   .swal2-popup {
-  font-size: 1.6rem !important;
+  font-size: 1.4rem !important;
   font-family: ${(props) => props.theme.fonts.main};
   background-color: ${(props) => props.theme.colors.main} !important;
   }
