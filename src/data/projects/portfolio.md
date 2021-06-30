@@ -4,7 +4,8 @@ projects:
   {
     path: 'portfolio',
     title: 'Portfolio',
-    type: 'Personal site',
+    description: 'My personal portfolio made with front-end framework Gatsby. I preferred to use mobile-first design in this project. My portfolio looks the same beautifully on all modern devices and have minimalistic design.',
+    type: 'Personal website',
     thumb: '../../images/projects/thumb/portfolio-thumb.jpg',
     featured: '../../images/projects/featured/portfolio-featured.jpg',
     sourceCode: 'https://github.com/john-ol/portfolio',
@@ -29,13 +30,40 @@ projects:
                 src: '/project-icons/framer.svg',
                 link: 'https://www.framer.com/api/motion/',
               },
+              {
+                title: 'Axios',
+                src: '/project-icons/axios.svg',
+                link: 'https://axios-http.com/',
+              },
+              {
+                title: 'Sweetalert',
+                src: '/project-icons/sweet-alert2.svg',
+                link: 'https://sweetalert2.github.io/',
+              },
             ],
           title: 'Front-end:',
+        },
+        {
+          tech:
+            [
+              {
+                title: 'Express',
+                src: '/project-icons/express.svg',
+                link: 'https://expressjs.com/',
+              },
+              {
+                title: 'Express-validator',
+                src: '/project-icons/express-validator.svg',
+                link: 'https://express-validator.github.io/docs/',
+              },
+              {
+                title: 'Telegraf.js',
+                src: '/project-icons/telegraf.svg',
+                link: 'https://github.com/telegraf/telegraf',
+              },
+            ],
+          title: 'Back-end:',
         },
       ],
   }
 ---
-
-**Frontend** established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-
-**Backend** The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem.

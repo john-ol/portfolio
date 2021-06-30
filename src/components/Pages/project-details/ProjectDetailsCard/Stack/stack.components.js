@@ -6,29 +6,18 @@ export const StackItem = styled.section`
     margin-bottom: 1.5rem;
   }
 `
-export const StackTitle = styled.h2`
-  font-size: 1.4rem;
-  margin-bottom: 1rem;
-
-  ${up('sm')} {
-    font-size: 1.5rem;
-  }
-
-  ${up('md')} {
-    font-size: 1.7rem;
-  }
-`
+export const StackTitle = styled.h2``
 export const StackGrid = styled.div`
   display: flex;
   flex-wrap: wrap;
-  margin-left: -1rem;
-  margin-bottom: -1rem;
+  margin-left: -1.5rem;
+  margin-bottom: -1.5rem;
 `
 
 export const TechLink = styled.a`
   width: 50%;
-  margin-bottom: 1rem;
-  padding-left: 1rem;
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
 
   ${up('sm')} {
     width: 33.33%;
@@ -66,6 +55,7 @@ export const LogoIcon = styled.img`
 export const ItemTitle = styled.p`
   border-top: 0.1rem solid ${(props) => props.theme.colors.borders};
   font-size: 1.3rem;
+  font-weight: ${(props) => props.theme.fonts.weight.light};
   padding: 1rem 0.8rem;
   width: 100%;
   text-align: center;

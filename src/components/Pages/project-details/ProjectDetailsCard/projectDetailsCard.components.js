@@ -78,6 +78,19 @@ export const ProjectDetailTag = styled(ProjectTag)`
 export const CardBody = styled.section`
   > section {
     padding: 1.2rem 0;
+    h2 {
+      font-size: 1.4rem;
+      margin-bottom: 1.2rem;
+
+      ${up('sm')} {
+        font-size: 1.5rem;
+      }
+
+      ${up('md')} {
+        font-size: 1.7rem;
+      }
+    }
+
     :not(:last-child) {
       border-bottom: 0.1rem solid ${(props) => props.theme.colors.borders};
     }
@@ -87,10 +100,17 @@ export const CardBody = styled.section`
   }
 `
 
-export const ProjectDescription = styled.section`
+export const ProjectDescription = styled.section``
+
+export const DescriptionTitle = styled.h2``
+
+export const DescriptionText = styled.p`
+  text-indent: 1.4rem;
   line-height: 1.8;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  text-align: justify;
 `
+
 export const ProjectDemoSource = styled.section``
 
 export const ProjectStack = styled.section``

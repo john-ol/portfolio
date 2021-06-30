@@ -66,13 +66,16 @@ export default function Contact() {
           position: 'top',
           showConfirmButton: false,
           timer: 3000,
-          title: err.response.data.errors
-            ? err.response.data.errors
-                .map((el, i) => `${i + 1}. ${el.msg}.`)
-                .join('\n')
-            : err.response.data.message,
+          title: err.response?.data
+            ? err.response?.data.errors
+              ? err.response?.data.errors
+                  .map((el, i) => `${i + 1}. ${el.msg}.`)
+                  .join('\n')
+              : err.response?.data.message
+            : 'Something went wrong :(',
         })
       )
+
     setFormData({ name: '', email: '', message: '' })
     setToken(null)
     //recaptchaRef.current.reset()

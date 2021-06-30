@@ -7,7 +7,7 @@ export const ProjectTag = styled.span`
   font-weight: ${(props) => props.theme.fonts.weight.bold};
   border-radius: ${(props) => props.theme.other.cardradius};
   ${({ type }) =>
-    type === 'Personal site' &&
+    type === 'Personal website' &&
     css`
       background-color: ${(props) => props.theme.colors.projects.personal};
     `}

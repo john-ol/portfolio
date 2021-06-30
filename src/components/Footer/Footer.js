@@ -32,7 +32,7 @@ const SectionFooter = () => {
             </FooterSocialIcons>
           </FooterInfo>
           <FooterPlatform>
-            Made with GatsbyJs and Styled components
+            Made with Gatsby and Styled components
           </FooterPlatform>
         </FooterInner>
       </Container>

@@ -10,6 +10,8 @@ import {
   ProjectDetailTag,
   CardBody,
   ProjectDescription,
+  DescriptionTitle,
+  DescriptionText,
   ProjectDemoSource,
   ProjectStack,
 } from './projectDetailsCard.components'
@@ -19,8 +21,8 @@ import SourceCodeIcon from '../../../../images/icons/project-details/source-code
 import { Stack } from './Stack/Stack'
 
 export const ProjectDetailsCard = ({ data }) => {
-  const { html } = data
-  const { title, type, demo, sourceCode, stack } = data.frontmatter.projects
+  const { title, description, type, demo, sourceCode, stack } =
+    data.frontmatter.projects
   return (
     <Card>
       <CardHeader>
@@ -33,8 +35,10 @@ export const ProjectDetailsCard = ({ data }) => {
         <ProjectDetailTag type={type}>{type}</ProjectDetailTag>
       </CardHeader>
       <CardBody>
-        <ProjectDescription dangerouslySetInnerHTML={{ __html: html }} />
-
+        <ProjectDescription>
+          <DescriptionTitle>Description:</DescriptionTitle>
+          <DescriptionText>{description}</DescriptionText>
+        </ProjectDescription>
         <ProjectDemoSource>
           {demo && (
             <DemoSource link={demo} icon={<SiteIcon />}>

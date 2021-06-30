@@ -1,28 +1,28 @@
 ---
 category: 'projects'
-
 projects:
   {
     path: 'image-gallery',
     title: 'Image gallery',
+    description: 'A simple image gallery made with React library and Material-UI framework. The application allows you to download popular image files such as png, jpj, gif, bmp.',
     type: 'Application',
     thumb: '../../images/projects/thumb/image-gallery-thumb.jpg',
     featured: '../../images/projects/featured/image-gallery-featured.jpg',
     demo: 'https://oleinikov.dev',
     sourceCode: 'https://github.com/john-ol/image-gallery',
-    date: 2021-06-01T00:00:00+00:00,
+    date: 2021-04-01T00:00:00+00:00,
     stack:
       [
         {
           tech:
             [
               {
-                title: 'ReactJs',
+                title: 'React',
                 src: '/project-icons/react-js.svg',
                 link: 'https://github.com/facebook/react',
               },
               {
-                title: 'Material-ui',
+                title: 'Material-UI',
                 src: '/project-icons/material-ui.svg',
                 link: 'https://material-ui.com/',
               },
@@ -56,5 +56,3 @@ projects:
       ],
   }
 ---
-
-# Image Gallery

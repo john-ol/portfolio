@@ -9,23 +9,13 @@ export const DemoSourceItem = styled.section`
   }
 `
 
-export const DemoSourceTitle = styled.h3`
-  font-size: 1.4rem;
-  margin-bottom: 1rem;
-
-  ${up('sm')} {
-    font-size: 1.5rem;
-  }
-
-  ${up('md')} {
-    font-size: 1.7rem;
-  }
-`
+export const DemoSourceTitle = styled.h2``
 
 export const DemoSourceContent = styled.div`
   font-size: 1.2rem;
   display: flex;
   align-items: center;
+
   svg {
     fill: ${(props) => props.theme.colors.projects.webapp};
     width: 1.6em;
@@ -53,6 +43,7 @@ export const DemoSourceContent = styled.div`
 export const DemoSourceLink = styled.a`
   position: relative;
   display: inline-block;
+  font-size: 1.3rem;
   :after {
     content: '';
     position: absolute;

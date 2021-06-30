@@ -43,6 +43,7 @@ export const query = graphql`
       frontmatter {
         projects {
           title
+          description
           type
           demo
           sourceCode

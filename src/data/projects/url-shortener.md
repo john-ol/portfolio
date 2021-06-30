@@ -3,7 +3,8 @@ category: 'projects'
 projects:
   {
     path: 'url-shortener',
-    title: 'Url shortener',
+    title: 'Url-shortener',
+    description: 'The project is made with React library and Material-UI framework. With this web application, you can easily shorten your link in a few clicks. You just need to register, and all information about shortened links will be saved in your account.',
     type: 'Application',
     thumb: '../../images/projects/thumb/url-shortener-thumb.jpg',
     featured: '../../images/projects/featured/url-shortener-featured.jpg',
@@ -16,9 +17,14 @@ projects:
           tech:
             [
               {
-                title: 'ReactJs',
+                title: 'React',
                 src: '/project-icons/react-js.svg',
                 link: 'https://github.com/facebook/react',
+              },
+              {
+                title: 'Material-UI',
+                src: '/project-icons/material-ui.svg',
+                link: 'https://material-ui.com/',
               },
               {
                 title: 'Redux',
@@ -29,11 +35,6 @@ projects:
                 title: 'Redux-thunk',
                 src: '/project-icons/redux.svg',
                 link: 'https://github.com/reduxjs/redux-thunk',
-              },
-              {
-                title: 'Material-ui',
-                src: '/project-icons/material-ui.svg',
-                link: 'https://material-ui.com/',
               },
               {
                 title: 'Axios',
@@ -52,7 +53,7 @@ projects:
                 link: 'https://expressjs.com/',
               },
               {
-                title: 'Express validator',
+                title: 'Express-validator',
                 src: '/project-icons/express-validator.svg',
                 link: 'https://express-validator.github.io/docs/',
               },
@@ -77,7 +78,3 @@ projects:
       ],
   }
 ---
-
-**Frontend** established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-
-**Backend** The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem.

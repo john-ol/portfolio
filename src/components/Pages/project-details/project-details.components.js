@@ -29,9 +29,9 @@ export const ImageCol = styled(Col)`
     justify-content: center;
   }
 `
-export const ImageTitle = styled.h3`
+export const ImageTitle = styled.h2`
   font-size: 1.4rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
   padding-top: 1.2rem;
   border-top: 0.1rem solid ${(props) => props.theme.colors.borders};
 
