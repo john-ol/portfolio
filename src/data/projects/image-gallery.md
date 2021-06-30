@@ -33,10 +33,12 @@ projects:
               },
               {
                 title: 'Notistack',
+                src: '/project-icons/notistack.svg',
                 link: 'https://www.npmjs.com/package/notistack',
               },
               {
                 title: 'React lazy load image',
+                src: '/project-icons/lazy-load.svg',
                 link: 'https://www.npmjs.com/package/react-lazy-load-image-component',
               },
             ],

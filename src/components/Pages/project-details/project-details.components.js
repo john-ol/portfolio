@@ -36,20 +36,27 @@ export const ImageTitle = styled.h2`
   border-top: 0.1rem solid ${(props) => props.theme.colors.borders};
 
   ${up('sm')} {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 
   ${up('md')} {
-    font-size: 1.7rem;
+    margin-bottom: 1.6rem;
+    padding-top: 1.6rem;
+    font-size: 1.8rem;
   }
 
   ${up('md', 'landscape')} {
     display: none;
   }
+
+  ${up('lg', 'portrait')} {
+    font-size: 1.8rem;
+  }
 `
 export const ProjectImage = styled.div`
   margin-bottom: 1.5rem;
   box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.2);
+
   ${up('md', 'landscape')} {
     max-width: 90%;
   }
@@ -58,5 +65,9 @@ export const ProjectImage = styled.div`
 export const InfoCol = styled(Col)`
   ${up('md', 'landscape')} {
     background-color: ${(props) => props.theme.colors.white};
+  }
+
+  ${up('xxxl')} {
+    margin-right: 1.5rem;
   }
 `

@@ -16,10 +16,6 @@ export const Card = styled.div`
     justify-content: center;
     border-left: 0.1rem solid ${(props) => props.theme.colors.borders};
   }
-
-  ${up('lg')} {
-    padding: 1.5rem 6rem;
-  }
 `
 
 export const CardHeader = styled.section`
@@ -49,6 +45,18 @@ export const IconBack = styled(Back)`
   ${up('md')} {
     font-size: 1.4rem;
   }
+
+  ${up('md', 'landscape')} {
+    font-size: 1.2rem;
+  }
+
+  ${up('lg', 'portrait')} {
+    font-size: 1.4rem;
+  }
+
+  ${up('xl')} {
+    font-size: 1.6rem;
+  }
 `
 
 export const CardTitle = styled.h1`
@@ -61,32 +69,81 @@ export const CardTitle = styled.h1`
   ${up('md')} {
     font-size: 2rem;
   }
+
+  ${up('md', 'landscape')} {
+    font-size: 1.8rem;
+  }
+
+  ${up('lg', 'portrait')} {
+    font-size: 2rem;
+  }
+
+  ${up('xl')} {
+    font-size: 2.2rem;
+  }
 `
 
 export const ProjectDetailTag = styled(ProjectTag)`
   padding: 0.6em 0.8em;
 
   ${up('sm')} {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 
   ${up('md')} {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+  }
+
+  ${up('md', 'landscape')} {
+    font-size: 1.3rem;
+  }
+
+  ${up('lg', 'portrait')} {
+    font-size: 1.4rem;
+  }
+
+  ${up('xl')} {
+    font-size: 1.5rem;
   }
 `
 
 export const CardBody = styled.section`
   > section {
     padding: 1.2rem 0;
+
+    ${up('md')} {
+      padding: 1.6rem 0;
+    }
+
+    ${up('xl')} {
+      padding: 2rem 0;
+    }
+
+    ${up('xxl')} {
+      padding: 1.8rem 0;
+    }
+
     h2 {
       font-size: 1.4rem;
-      margin-bottom: 1.2rem;
+      margin-bottom: 1rem;
 
       ${up('sm')} {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
       }
 
       ${up('md')} {
+        font-size: 1.8rem;
+      }
+
+      ${up('md', 'landscape')} {
+        font-size: 1.6rem;
+      }
+
+      ${up('lg', 'portrait')} {
+        font-size: 1.8rem;
+      }
+
+      ${up('xl')} {
         font-size: 1.7rem;
       }
     }
@@ -109,6 +166,22 @@ export const DescriptionText = styled.p`
   line-height: 1.8;
   font-size: 1.3rem;
   text-align: justify;
+
+  ${up('sm')} {
+    font-size: 1.5rem;
+  }
+
+  ${up('md')} {
+    font-size: 1.6rem;
+  }
+
+  ${up('md', 'landscape')} {
+    font-size: 1.5rem;
+  }
+
+  ${up('lg', 'portrait')} {
+    font-size: 1.6rem;
+  }
 `
 
 export const ProjectDemoSource = styled.section``

@@ -12,6 +12,10 @@ export const Card = styled.div`
   :hover {
     transform: scale(1.03);
     box-shadow: 0px 8px 5px -2px rgba(0, 0, 0, 0.27);
+
+    ${up('xxl')} {
+      transform: scale(1.02);
+    }
   }
 
   :after {
@@ -41,11 +45,11 @@ export const CardInfo = styled.div`
   left: 0;
   bottom: 1rem;
   padding: 0 1.2rem;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   z-index: 1;
 
   ${up('sm')} {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 
   ${up('md')} {
@@ -54,6 +58,10 @@ export const CardInfo = styled.div`
 
   ${up('lg')} {
     font-size: 1.8rem;
+  }
+
+  ${up('xxl')} {
+    font-size: 2rem;
   }
 `
 
@@ -66,15 +74,18 @@ export const AllProjectTags = styled(ProjectTag)`
   top: 0;
   right: 0;
   z-index: 1;
-  font-size: 1rem;
-  padding: 0.4rem 1rem;
+  font-size: 1.1rem;
+  padding: 0.5em 1.2em;
 
   ${up('md')} {
-    padding: 0.6rem 1rem;
+    font-size: 1.2rem;
   }
 
-  ${up('lg')} {
-    padding: 0.8rem 1.2rem;
-    font-size: 1.2rem;
+  ${up('xl')} {
+    font-size: 1.3rem;
+  }
+
+  ${up('xxl')} {
+    font-size: 1.4rem;
   }
 `

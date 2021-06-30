@@ -4,6 +4,7 @@ import { up } from 'styled-breakpoints'
 export const DemoSourceItem = styled.section`
   display: flex;
   flex-direction: column;
+
   :not(:last-child) {
     margin-bottom: 2rem;
   }
@@ -12,7 +13,6 @@ export const DemoSourceItem = styled.section`
 export const DemoSourceTitle = styled.h2``
 
 export const DemoSourceContent = styled.div`
-  font-size: 1.2rem;
   display: flex;
   align-items: center;
 
@@ -23,20 +23,24 @@ export const DemoSourceContent = styled.div`
     margin-right: 1.2rem;
 
     ${up('sm')} {
-      font-size: 1.3rem;
+      font-size: 1.5rem;
     }
 
     ${up('md')} {
-      font-size: 1.7rem;
+      font-size: 1.8rem;
     }
-  }
 
-  ${up('sm')} {
-    font-size: 1.3rem;
-  }
+    ${up('md', 'landscape')} {
+      font-size: 1.6rem;
+    }
 
-  ${up('md')} {
-    font-size: 1.6rem;
+    ${up('lg', 'portrait')} {
+      font-size: 1.8rem;
+    }
+
+    ${up('xl')} {
+      font-size: 1.9rem;
+    }
   }
 `
 
@@ -44,6 +48,7 @@ export const DemoSourceLink = styled.a`
   position: relative;
   display: inline-block;
   font-size: 1.3rem;
+
   :after {
     content: '';
     position: absolute;
@@ -56,7 +61,28 @@ export const DemoSourceLink = styled.a`
     opacity: 0;
     transition: opacity 0.2s linear;
   }
+
   :hover:after {
     opacity: 1;
+  }
+
+  ${up('sm')} {
+    font-size: 1.4rem;
+  }
+
+  ${up('md')} {
+    font-size: 1.6rem;
+  }
+
+  ${up('md', 'landscape')} {
+    font-size: 1.5rem;
+  }
+
+  ${up('lg', 'portrait')} {
+    font-size: 1.6rem;
+  }
+
+  ${up('xl')} {
+    font-size: 1.7rem;
   }
 `
