@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { up } from 'styled-breakpoints'
 import { motion } from 'framer-motion'
 
 export const Card = styled(motion.div)`
@@ -18,6 +19,14 @@ export const CardHeader = styled.section`
 
 export const CardTitle = styled.h2`
   font-size: 1.5rem;
+
+  ${up('sm')} {
+    font-size: 1.6rem;
+  }
+
+  ${up('lg')} {
+    font-size: 1.7rem;
+  }
 `
 
 export const CardIcon = styled.div`
@@ -27,8 +36,16 @@ export const CardIcon = styled.div`
 
   svg {
     fill: ${(props) => props.theme.colors.icons};
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 2.5em;
+    width: 2.5em;
+  }
+
+  ${up('sm')} {
+    font-size: 1.1rem;
+  }
+
+  ${up('lg')} {
+    font-size: 1.2rem;
   }
 `
 

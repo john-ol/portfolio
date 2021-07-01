@@ -22,6 +22,10 @@ export const useInfo = () => {
                   text
                   link
                 }
+                languages {
+                  icon
+                  text
+                }
               }
             }
           }

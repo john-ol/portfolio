@@ -33,6 +33,11 @@ resume:
                   link: true,
                 },
               ],
+            languages:
+              {
+                icon: '/resume-icons/languages.svg',
+                text: 'English(pre-intermidiate), Ukrainian, Russian',
+              },
           },
       },
   }

@@ -14,7 +14,7 @@ resume:
               subtitle: 'Front-end developer',
               list:
                 [
-                  'Daily maintenance of code, debugging issues and solving clients’ problems.',
+                  'Daily maintenance of code, debugging issues and solving client’s problems.',
                   'Conducted design and code reviews to improve new features.',
                   'Experience in template building, writing custom modules.',
                   'Planned, implemented and oversaw website creative content and overall eCommerce functionality to improve customers experience through e-blasts, abandoned cart emails.',

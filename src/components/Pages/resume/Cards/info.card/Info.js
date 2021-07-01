@@ -13,13 +13,14 @@ import {
   ItemIcon,
   ItemText,
   ItemLink,
+  Languages,
 } from './info.components'
 import { CardItem } from '../CardItem/CardItem'
 
 export const GeneralInfo = () => {
   const { markdownRemark, file } = useInfo()
   const { area, title, body } = markdownRemark.frontmatter.resume
-  const { name, prof, contact } = body.generalInfo
+  const { name, prof, contact, languages } = body.generalInfo
   const image = getImage(file.childImageSharp)
 
   return (
@@ -45,6 +46,10 @@ export const GeneralInfo = () => {
               </ContactInfoItem>
             ))}
           </ContactInfo>
+          <Languages>
+            <ItemIcon src={languages.icon} alt={languages} />
+            <ItemText>{languages.text}</ItemText>
+          </Languages>
         </Information>
       </InfoSection>
     </CardItem>

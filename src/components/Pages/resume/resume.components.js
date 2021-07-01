@@ -10,6 +10,7 @@ export const ResumeGrid = styled.section`
   grid-template-areas:
     'general'
     'summary'
+    'skills'
     'experience'
     'education';
   grid-gap: 1rem;
@@ -17,8 +18,22 @@ export const ResumeGrid = styled.section`
 
   ${up('md')} {
     grid-template-areas:
-      'general summary summary'
-      'education summary summary'
-      'experience experience experience';
+      'summary summary summary summary summary summary summary summary summary summary summary summary'
+      'general general general general general general general general education education education education'
+      'skills skills skills experience experience experience experience experience experience experience experience experience';
+  }
+
+  ${up('md', 'landscape')} {
+    grid-template-areas:
+      'summary summary summary summary summary summary summary summary summary summary summary summary'
+      'general general general general general general general general education education education education'
+      'skills skills skills experience experience experience experience experience experience experience experience experience';
+  }
+
+  ${up('lg')} {
+    grid-template-areas:
+      'summary summary summary summary summary summary summary summary summary summary summary summary'
+      'general general general general general general general general general education education education'
+      'skills skills skills experience experience experience experience experience experience experience experience experience';
   }
 `

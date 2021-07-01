@@ -10,6 +10,10 @@ export const BurgerButton = styled(Button)`
   border-radius: 0.3rem;
   border: none;
 
+  :focus {
+    box-shadow: none;
+  }
+
   ${({ open }) =>
     open &&
     css`
