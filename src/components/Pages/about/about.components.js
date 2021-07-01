@@ -24,6 +24,10 @@ export const InfoCol = styled(Col)`
   ${up('md', 'landscape')} {
     background-color: ${(props) => props.theme.colors.white};
   }
+
+  ${up('xxxl')} {
+    margin-right: 1.5rem;
+  }
 `
 export const ImageCol = styled(Col)`
   justify-content: center;

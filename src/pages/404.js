@@ -1,12 +1,12 @@
 import React from 'react'
 import { Layout } from '../components/Layout/Layout'
-import { LinkButton } from '../components/Buttons/LinkButton/linkButton.components'
 import {
   NotFoundContainer,
   NotFoundRow,
-  Logo,
   NotFoundTitle,
+  NotFoundImg,
   NotFoundSubtitle,
+  BackToHomeBtn,
 } from '../components/Pages/404/404.components'
 
 export default function NotFound() {
@@ -14,12 +14,13 @@ export default function NotFound() {
     <Layout>
       <NotFoundContainer>
         <NotFoundRow>
-          <NotFoundSubtitle>Whoops!</NotFoundSubtitle>
+          <NotFoundSubtitle>Oops!</NotFoundSubtitle>
           <NotFoundTitle>Page Not Found</NotFoundTitle>
-          <Logo />
-          <LinkButton to='/' variant='primary'>
-            Go to Home page
-          </LinkButton>
+
+          <NotFoundImg src='/not-found/not-found.svg' />
+          <BackToHomeBtn to='/' variant='primary'>
+            Home page
+          </BackToHomeBtn>
         </NotFoundRow>
       </NotFoundContainer>
     </Layout>

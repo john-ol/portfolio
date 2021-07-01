@@ -10,7 +10,7 @@ resume:
           [
             {
               date: '27.11.2017 - 02.03.2020',
-              title: 'TOV Bio-Farm Agrotraid LTD',
+              title: 'TOV Bio-Farm Agrotrade LTD',
               subtitle: 'Front-end developer',
               list:
                 [

@@ -18,22 +18,22 @@ export const ResumeGrid = styled.section`
 
   ${up('md')} {
     grid-template-areas:
-      'summary summary summary summary summary summary summary summary summary summary summary summary'
       'general general general general general general general general education education education education'
+      'summary summary summary summary summary summary summary summary summary summary summary summary'
       'skills skills skills experience experience experience experience experience experience experience experience experience';
   }
 
   ${up('md', 'landscape')} {
     grid-template-areas:
-      'summary summary summary summary summary summary summary summary summary summary summary summary'
       'general general general general general general general general education education education education'
+      'summary summary summary summary summary summary summary summary summary summary summary summary'
       'skills skills skills experience experience experience experience experience experience experience experience experience';
   }
 
   ${up('lg')} {
     grid-template-areas:
-      'summary summary summary summary summary summary summary summary summary summary summary summary'
       'general general general general general general general general general education education education'
+      'summary summary summary summary summary summary summary summary summary summary summary summary'
       'skills skills skills experience experience experience experience experience experience experience experience experience';
   }
 `

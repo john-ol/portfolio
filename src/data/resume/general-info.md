@@ -3,7 +3,7 @@ category: 'resume'
 resume:
   {
     area: 'general',
-    title: 'General infromation',
+    title: 'General information',
     body:
       {
         generalInfo:
