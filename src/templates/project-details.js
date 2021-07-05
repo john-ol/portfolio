@@ -2,6 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import { Layout } from '../components/Layout/Layout'
+import { Seo } from '../components/Seo/Seo'
 import {
   ProjectContainer,
   ProjectRow,
@@ -20,6 +21,7 @@ export default function ProjectDetails({ data }) {
 
   return (
     <Layout>
+      <Seo pageTitle={title} />
       <ProjectContainer>
         <ProjectRow>
           <InfoCol>

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Layout } from '../components/Layout/Layout'
+import { Seo } from '../components/Seo/Seo'
 import {
   NotFoundContainer,
   NotFoundRow,
@@ -12,6 +13,7 @@ import {
 export default function NotFound() {
   return (
     <Layout>
+      <Seo pageTitle='Page not found' />
       <NotFoundContainer>
         <NotFoundRow>
           <NotFoundSubtitle>Oops!</NotFoundSubtitle>

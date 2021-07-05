@@ -2,6 +2,7 @@ import React from 'react'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import { useHeroImg } from '../components/Pages/Index/index.queries'
 import { Layout } from '../components/Layout/Layout'
+import { Seo } from '../components/Seo/Seo'
 import {
   HeroContainer,
   HeroRow,
@@ -31,6 +32,7 @@ export default function Home() {
 
   return (
     <Layout>
+      <Seo pageTitle='Home' />
       <HeroContainer>
         <HeroRow>
           <InfoCol

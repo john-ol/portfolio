@@ -4,6 +4,7 @@ import axios from 'axios'
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
 import { Layout } from './../components/Layout/Layout'
+import { Seo } from '../components/Seo/Seo'
 import {
   ContactContainer,
   ContactRow,
@@ -95,6 +96,7 @@ export default function Contact() {
   }
   return (
     <Layout>
+      <Seo pageTitle='Contact me' />
       <ContactContainer>
         <ContactRow>
           <ContactForm>

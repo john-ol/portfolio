@@ -7,7 +7,6 @@ import { TimeLine } from '../TimeLine/TimeLine'
 
 export const Education = () => {
   const { area, title, body } = useEducation()
-  console.log()
   return (
     <CardItem area={area} title={title} icon={<CardIcon />}>
       <TimeLineSection>

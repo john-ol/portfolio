@@ -1,5 +1,6 @@
 import React from 'react'
 import { Layout } from '../components/Layout/Layout'
+import { Seo } from '../components/Seo/Seo'
 import {
   ResumeContainer,
   ResumeGrid,
@@ -13,6 +14,7 @@ import { Skills } from '../components/Pages/resume/Cards/skills.card/Skills'
 export default function Resume() {
   return (
     <Layout>
+      <Seo pageTitle='Resume' />
       <ResumeContainer>
         <ResumeGrid>
           <GeneralInfo />

@@ -7,9 +7,14 @@ require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 module.exports = {
-  /* Your site config here */
-
+  siteMetadata: {
+    title: `Oleinikov.dev`,
+    description: `My personal portfolio made with front-end framework Gatsby`,
+    author: `Evgeniy Oleinikov`,
+    keywords: `Portolio, Oleinikov.dev, Gatsby, Front-end`,
+  },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     `gatsby-transformer-remark`,
     {
       resolve: `gatsby-source-filesystem`,

@@ -3,6 +3,7 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import { useAboutImg } from '../components/Pages/about/queries/useAboutImg'
 import { useAboutText } from '../components/Pages/about/queries/useAboutText'
 import { Layout } from '../components/Layout/Layout'
+import { Seo } from '../components/Seo/Seo'
 import {
   AboutContainer,
   AboutRow,
@@ -24,6 +25,7 @@ export default function About() {
 
   return (
     <Layout>
+      <Seo pageTitle='About me' />
       <AboutContainer>
         <AboutRow>
           <InfoCol>
