@@ -70,7 +70,7 @@ export const SkillsLabel = styled.span`
   color: ${(props) => props.theme.colors.white};
   font-weight: ${(props) => props.theme.fonts.weight.bold};
   background-color: ${(props) => props.color};
-  outline: 0.1rem solid ${(props) => props.color};
+  border: 0.1rem solid ${(props) => props.color};
   border-radius: ${(props) => props.theme.other.cardradius};
 
   ${up('sm')} {

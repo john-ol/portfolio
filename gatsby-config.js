@@ -14,6 +14,18 @@ module.exports = {
     keywords: `Portolio, Oleinikov.dev, Gatsby, Front-end`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-csp`,
+      options: {
+        mergeScriptHashes: false,
+        mergeStyleHashes: false,
+        directives: {
+          'script-src': `'self' 'unsafe-inline' https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/`,
+          'frame-src': `'self' 'unsafe-inline' https://www.google.com/recaptcha/ https://recaptcha.google.com/recaptcha/`,
+          'style-src': `'self' 'unsafe-inline'`,
+        },
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-remark`,
     {
