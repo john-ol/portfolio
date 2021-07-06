@@ -23,6 +23,7 @@ module.exports = {
           'script-src': `'self' 'unsafe-inline' https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/`,
           'frame-src': `'self' 'unsafe-inline' https://www.google.com/recaptcha/ https://recaptcha.google.com/recaptcha/`,
           'style-src': `'self' 'unsafe-inline'`,
+          'font-src': `'self' data: fonts.gstatic.com`,
         },
       },
     },

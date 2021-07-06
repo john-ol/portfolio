@@ -50,7 +50,7 @@ export default function Contact() {
 
     axios
       .post(url, data)
-      .then((res) =>
+      .then((res) => {
         Alert.fire({
           toast: true,
           icon: 'success',
@@ -59,7 +59,10 @@ export default function Contact() {
           timer: 3000,
           title: res.data.message,
         })
-      )
+        setFormData({ name: '', email: '', message: '' })
+        setToken(null)
+        recaptchaRef.current.reset()
+      })
       .catch((err) =>
         Alert.fire({
           toast: true,
@@ -76,10 +79,6 @@ export default function Contact() {
             : 'Something went wrong :(',
         })
       )
-
-    setFormData({ name: '', email: '', message: '' })
-    setToken(null)
-    //recaptchaRef.current.reset()
   }
 
   const changeHandler = (event) => {
