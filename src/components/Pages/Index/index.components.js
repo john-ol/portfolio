@@ -129,8 +129,6 @@ export const SocialIconList = styled.ul`
   }
 `
 export const SocialIcon = styled(motion.li)`
-  cursor: pointer;
-
   :not(:last-child) {
     margin-right: 1rem;
 
@@ -167,6 +165,7 @@ export const SocialIcon = styled(motion.li)`
     }
   }
 `
+export const SocialIconLink = styled.a``
 export const GithubIcon = styled(Github)``
 export const LinkedinIcon = styled(Linkedin)`
   fill: #0077b7;

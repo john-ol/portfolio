@@ -8,7 +8,7 @@ projects:
     type: 'Application',
     thumb: '../../images/projects/thumb/image-gallery-thumb.jpg',
     featured: '../../images/projects/featured/image-gallery-featured.jpg',
-    demo: 'https://oleinikov.dev',
+    demo: 'https://image-gallery-rho.vercel.app',
     sourceCode: 'https://github.com/john-ol/image-gallery',
     date: 2021-04-01T00:00:00+00:00,
     stack:

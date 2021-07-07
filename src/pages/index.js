@@ -14,6 +14,7 @@ import {
   HeroProf,
   SocialIconList,
   SocialIcon,
+  SocialIconLink,
   GithubIcon,
   LinkedinIcon,
   ButtonListHero,
@@ -54,7 +55,12 @@ export default function Home() {
                 whileTap='onClick'
                 transition='transition'
               >
-                <GithubIcon />
+                <SocialIconLink
+                  href='https://github.com/john-ol'
+                  target='_blank'
+                >
+                  <GithubIcon />
+                </SocialIconLink>
               </SocialIcon>
               <SocialIcon
                 variants={socialIconsAnimate}
@@ -62,7 +68,12 @@ export default function Home() {
                 whileTap='onClick'
                 transition='transition'
               >
-                <LinkedinIcon />
+                <SocialIconLink
+                  href='https://www.linkedin.com/in/evgeniy-oleinikov-3b7b3a1b4'
+                  target='_blank'
+                >
+                  <LinkedinIcon />
+                </SocialIconLink>
               </SocialIcon>
             </SocialIconList>
             <ButtonListHero>

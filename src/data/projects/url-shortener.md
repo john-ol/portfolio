@@ -9,8 +9,9 @@ projects:
     thumb: '../../images/projects/thumb/url-shortener-thumb.jpg',
     featured: '../../images/projects/featured/url-shortener-featured.jpg',
     date: 2021-07-01T00:00:00+00:00,
-    demo: 'https://oleinikov.dev',
-    sourceCode: 'https://github.com/john-ol/url-shortener',
+    demo: 'https://url-shortener-front.vercel.app',
+    sourceCode: 'https://github.com/john-ol/url-shortener-front',
+    sourceCodeBack: 'https://github.com/john-ol/url-shortener-back',
     stack:
       [
         {

@@ -68,7 +68,7 @@ export const SocialIcon = styled.li`
     }
   }
 `
-
+export const SocialIconLink = styled.a``
 export const GithubIcon = styled(Github)``
 export const LinkedinIcon = styled(Linkedin)``
 

@@ -8,7 +8,7 @@ projects:
     type: 'Application',
     thumb: '../../images/projects/thumb/google-clone-thumb.jpg',
     featured: '../../images/projects/featured/google-clone-featured.jpg',
-    demo: 'https://www.oleinikov.dev',
+    demo: 'https://google-tailwind.vercel.app',
     sourceCode: 'https://github.com/john-ol/google-tailwind',
     date: 2021-06-01T00:00:00+00:00,
     stack:

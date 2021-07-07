@@ -8,7 +8,7 @@ projects:
     type: 'Application',
     thumb: '../../images/projects/thumb/hulu-clone-thumb.jpg',
     featured: '../../images/projects/featured/hulu-clone-featured.jpg',
-    demo: 'https://www.oleinikov.dev',
+    demo: 'https://hulu-tailwind-six.vercel.app',
     sourceCode: 'https://github.com/john-ol/hulu-tailwind',
     date: 2021-05-01T00:00:00+00:00,
     stack:

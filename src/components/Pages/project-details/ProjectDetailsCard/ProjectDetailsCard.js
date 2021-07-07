@@ -21,7 +21,7 @@ import SourceCodeIcon from '../../../../images/icons/project-details/source-code
 import { Stack } from './Stack/Stack'
 
 export const ProjectDetailsCard = ({ data }) => {
-  const { title, description, type, demo, sourceCode, stack } =
+  const { title, description, type, demo, sourceCode, sourceCodeBack, stack } =
     data.frontmatter.projects
   return (
     <Card>
@@ -46,8 +46,13 @@ export const ProjectDetailsCard = ({ data }) => {
             </DemoSource>
           )}
           <DemoSource link={sourceCode} icon={<SourceCodeIcon />}>
-            Source code:
+            Source code Front:
           </DemoSource>
+          {sourceCodeBack && (
+            <DemoSource link={sourceCodeBack} icon={<SourceCodeIcon />}>
+              Source code Back:
+            </DemoSource>
+          )}
         </ProjectDemoSource>
         <ProjectStack>
           <Stack stack={stack} />

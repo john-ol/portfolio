@@ -7,6 +7,7 @@ import {
   FooterCopyrigth,
   FooterSocialIcons,
   SocialIcon,
+  SocialIconLink,
   GithubIcon,
   LinkedinIcon,
   FooterPlatform,
@@ -24,10 +25,20 @@ const SectionFooter = () => {
 
             <FooterSocialIcons>
               <SocialIcon>
-                <GithubIcon />
+                <SocialIconLink
+                  href='https://github.com/john-ol'
+                  target='_blank'
+                >
+                  <GithubIcon />
+                </SocialIconLink>
               </SocialIcon>
               <SocialIcon>
-                <LinkedinIcon />
+                <SocialIconLink
+                  href='https://www.linkedin.com/in/evgeniy-oleinikov-3b7b3a1b4'
+                  target='_blank'
+                >
+                  <LinkedinIcon />
+                </SocialIconLink>
               </SocialIcon>
             </FooterSocialIcons>
           </FooterInfo>

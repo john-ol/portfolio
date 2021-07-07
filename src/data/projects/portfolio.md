@@ -9,6 +9,7 @@ projects:
     thumb: '../../images/projects/thumb/portfolio-thumb.jpg',
     featured: '../../images/projects/featured/portfolio-featured.jpg',
     sourceCode: 'https://github.com/john-ol/portfolio',
+    sourceCodeBack: 'https://github.com/john-ol/oleinikov-dev-backend',
     date: 2021-08-01T00:00:00+00:00,
     stack:
       [

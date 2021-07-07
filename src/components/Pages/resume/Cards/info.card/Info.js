@@ -37,7 +37,7 @@ export const GeneralInfo = () => {
               <ContactInfoItem key={el.text}>
                 <ItemIcon src={el.icon} alt={el.text} />
                 {el.link ? (
-                  <ItemLink href={el.text} target='_blank'>
+                  <ItemLink href={el.link} target='_blank'>
                     {el.text}
                   </ItemLink>
                 ) : (

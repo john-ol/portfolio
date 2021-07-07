@@ -49,6 +49,7 @@ export const query = graphql`
           type
           demo
           sourceCode
+          sourceCodeBack
           stack {
             title
             tech {
