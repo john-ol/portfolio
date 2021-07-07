@@ -25,7 +25,7 @@ module.exports = {
           'style-src': `'self' 'unsafe-inline'`,
           'img-src': `'self' data: https://www.gstatic.com`,
           'font-src': `'self' data: fonts.gstatic.com`,
-          'connect-src': `https://oleinikov-dev-backend.vercel.app`,
+          'connect-src': `'self' data: https://oleinikov-dev-backend.vercel.app`,
         },
       },
     },
