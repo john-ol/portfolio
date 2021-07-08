@@ -1,5 +1,6 @@
 import React from 'react'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+import DOMPurify from 'dompurify'
 import { useAboutImg } from '../components/Pages/about/queries/useAboutImg'
 import { useAboutText } from '../components/Pages/about/queries/useAboutText'
 import { Layout } from '../components/Layout/Layout'
@@ -25,6 +26,7 @@ import {
 export default function About() {
   const { file } = useAboutImg()
   const { html } = useAboutText()
+  const sanitizeHtml = DOMPurify.sanitize(html)
   const image = getImage(file.childImageSharp)
 
   return (
@@ -42,7 +44,7 @@ export default function About() {
                 <CardTitle>About me</CardTitle>
                 <CardIcon />
               </CardHeader>
-              <CardText dangerouslySetInnerHTML={{ __html: html }} />
+              <CardText dangerouslySetInnerHTML={{ __html: sanitizeHtml }} />
               <CardSign>{'Best regards,\n Evgeniy'}</CardSign>
             </AboutCard>
           </InfoCol>

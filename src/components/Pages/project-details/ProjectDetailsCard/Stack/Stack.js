@@ -9,7 +9,7 @@ import {
   LogoIcon,
 } from './stack.components'
 import { stackAnimations } from './stack.animations'
-import { infoAnimation } from '../../../resume/Cards/info.card/info.animations'
+
 export const Stack = ({ stack }) => {
   return (
     <>
