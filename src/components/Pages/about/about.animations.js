@@ -1,15 +1,14 @@
 export const infoColAnimation = {
   hidden: {
     opacity: 0,
-    x: '-50vw',
+    y: '-50vh',
   },
   visible: {
     opacity: 1,
-    x: 0,
+    y: 0,
     transition: {
       type: 'spring',
       bounce: 0.4,
-      duration: 1,
     },
   },
 }
@@ -17,28 +16,15 @@ export const infoColAnimation = {
 export const imageColAnimation = {
   hidden: {
     opacity: 0,
-    x: '50vw',
+    y: '50vh',
   },
   visible: {
     opacity: 1,
-    x: 0,
+    y: 0,
     transition: {
       type: 'spring',
-      damping: 12,
-      bounce: 0.35,
+      bounce: 0.4,
       delay: 0.3,
-      duration: 1,
     },
-  },
-}
-export const socialIconsAnimate = {
-  onHover: {
-    translateY: '-0.8rem',
-  },
-  onClick: {
-    scale: 0.9,
-  },
-  transition: {
-    duration: 0.3,
   },
 }

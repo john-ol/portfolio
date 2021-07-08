@@ -46,7 +46,7 @@ const SectionHeader = () => {
           </Info>
           {/* Navbar */}
           <Burger open={open} setOpen={setOpen} />
-          <Nav open={open} />
+          <Nav open={open} setOpen={setOpen} />
         </HeaderInner>
       </Container>
     </Header>

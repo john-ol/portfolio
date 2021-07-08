@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components'
 import { up } from 'styled-breakpoints'
 import ReCAPTCHA from 'react-google-recaptcha'
+import { motion } from 'framer-motion'
 import { Container } from '../../Layout/layout.components'
 import { Row } from '../../Grid/grid.components'
 import { Button } from '../../Buttons/Button/button.components'
@@ -15,7 +16,7 @@ export const ContactRow = styled(Row)`
   justify-content: center;
 `
 
-export const ContactForm = styled.form`
+export const ContactForm = styled(motion.form)`
   padding: 2rem 2.5rem;
   display: flex;
   flex-direction: column;

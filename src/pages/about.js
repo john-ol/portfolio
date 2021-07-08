@@ -5,6 +5,10 @@ import { useAboutText } from '../components/Pages/about/queries/useAboutText'
 import { Layout } from '../components/Layout/Layout'
 import { Seo } from '../components/Seo/Seo'
 import {
+  infoColAnimation,
+  imageColAnimation,
+} from '../components/Pages/about/about.animations'
+import {
   AboutContainer,
   AboutRow,
   AboutImage,
@@ -28,7 +32,11 @@ export default function About() {
       <Seo pageTitle='About me' />
       <AboutContainer>
         <AboutRow>
-          <InfoCol>
+          <InfoCol
+            variants={infoColAnimation}
+            initial='hidden'
+            animate='visible'
+          >
             <AboutCard>
               <CardHeader>
                 <CardTitle>About me</CardTitle>
@@ -38,7 +46,11 @@ export default function About() {
               <CardSign>{'Best regards,\n Evgeniy'}</CardSign>
             </AboutCard>
           </InfoCol>
-          <ImageCol>
+          <ImageCol
+            variants={imageColAnimation}
+            initial='hidden'
+            animate='visible'
+          >
             <AboutImage>
               <GatsbyImage image={image} alt={file.name} />
             </AboutImage>

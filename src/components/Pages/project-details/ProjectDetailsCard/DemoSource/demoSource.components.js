@@ -14,7 +14,10 @@ export const DemoSourceTitle = styled.h2``
 
 export const DemoSourceContent = styled.div`
   display: flex;
-  align-items: center;
+
+  ${up('sm')} {
+    align-items: center;
+  }
 
   svg {
     fill: ${(props) => props.theme.colors.projects.webapp};

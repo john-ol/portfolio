@@ -8,7 +8,8 @@ import {
   ItemTitle,
   LogoIcon,
 } from './stack.components'
-
+import { stackAnimations } from './stack.animations'
+import { infoAnimation } from '../../../resume/Cards/info.card/info.animations'
 export const Stack = ({ stack }) => {
   return (
     <>
@@ -16,11 +17,18 @@ export const Stack = ({ stack }) => {
         <StackItem key={item.title}>
           <StackTitle>{item.title}</StackTitle>
           <StackGrid>
-            {item.tech.map((tech) => (
-              <TechLink href={tech.link} key={tech.title} target='_blank'>
+            {item.tech.map((tech, i) => (
+              <TechLink
+                href={tech.link}
+                key={tech.title}
+                target='_blank'
+                variants={stackAnimations}
+                initial='hidden'
+                animate='visible'
+                custom={i}
+              >
                 <GridItem key={tech.title}>
                   <LogoIcon src={tech.src} alt={tech.title} />
-
                   <ItemTitle>{tech.title}</ItemTitle>
                 </GridItem>
               </TechLink>

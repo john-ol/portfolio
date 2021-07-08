@@ -16,7 +16,7 @@ import {
   Languages,
 } from './info.components'
 import { CardItem } from '../CardItem/CardItem'
-
+import { infoAnimation } from './info.animations'
 export const GeneralInfo = () => {
   const { markdownRemark, file } = useInfo()
   const { area, title, body } = markdownRemark.frontmatter.resume
@@ -24,7 +24,12 @@ export const GeneralInfo = () => {
   const image = getImage(file.childImageSharp)
 
   return (
-    <CardItem area={area} title={title} icon={<CardIcon />}>
+    <CardItem
+      area={area}
+      title={title}
+      icon={<CardIcon />}
+      variants={infoAnimation}
+    >
       <InfoSection>
         <Avatar>
           <GatsbyImage image={image} alt={file.name} />
