@@ -33,7 +33,7 @@ export default function Home() {
 
   return (
     <Layout>
-      <Seo pageTitle='Home' />
+      <Seo />
       <HeroContainer>
         <HeroRow>
           <InfoCol
