@@ -1,15 +1,15 @@
 export const contactFormAnimation = {
   hidden: {
-    scale: 0,
-    x: 0,
-    y: 0,
+    opacity: 0,
+    y: '50vh',
   },
   visible: {
-    scale: 1,
+    opacity: 1,
+    y: 0,
     transition: {
       type: 'spring',
       bounce: 0.3,
-      duration: 0.8,
+      duration: 0.7,
     },
   },
 }
