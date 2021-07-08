@@ -9,9 +9,10 @@ require('dotenv').config({
 module.exports = {
   siteMetadata: {
     title: `Oleinikov.dev`,
-    description: `My personal portfolio made with front-end framework Gatsby`,
+    description: `My personal portfolio website`,
     author: `Evgeniy Oleinikov`,
     keywords: `Portolio, Oleinikov.dev, Gatsby, Front-end`,
+    image: `/og-image.jpg`,
   },
   plugins: [
     {

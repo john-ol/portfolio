@@ -3,8 +3,7 @@ import { Helmet } from 'react-helmet'
 import { useHelmetData } from './seo.queries'
 
 export const Seo = ({ pageTitle, lang, meta }) => {
-  const { title, keywords, author, description } = useHelmetData()
-
+  const { title, keywords, author, description, image } = useHelmetData()
   return (
     <Helmet
       htmlAttributes={{
@@ -29,6 +28,10 @@ export const Seo = ({ pageTitle, lang, meta }) => {
           content: description,
         },
         {
+          property: `og:image`,
+          content: image,
+        },
+        {
           property: `og:type`,
           content: `website`,
         },
@@ -47,6 +50,10 @@ export const Seo = ({ pageTitle, lang, meta }) => {
         {
           name: `twitter:description`,
           content: description,
+        },
+        {
+          name: `twitter:image`,
+          content: image,
         },
       ].concat(meta)}
     />

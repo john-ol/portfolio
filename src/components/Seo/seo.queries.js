@@ -9,6 +9,7 @@ export const useHelmetData = () => {
           description
           keywords
           title
+          image
         }
       }
     }
