@@ -14,7 +14,24 @@ export const Layout = ({ children }) => {
         <GlobalStyles />
         <SiteContainer>
           <Header />
-          <Main>{children}</Main>
+          <Main
+            initial={{
+              opacity: 0,
+              x: 0,
+            }}
+            animate={{
+              opacity: 1,
+            }}
+            exit={{
+              opacity: 0,
+            }}
+            transition={{
+              type: 'spring',
+              duration: 0.5,
+            }}
+          >
+            {children}
+          </Main>
           <Footer />
         </SiteContainer>
       </ThemeProvider>

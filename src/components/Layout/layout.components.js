@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
 
 export const SiteContainer = styled.div`
   min-height: 100vh;
@@ -14,7 +15,7 @@ export const Container = styled.div`
   padding: 0 1.5rem;
 `
 
-export const Main = styled.main`
+export const Main = styled(motion.main)`
   overflow: hidden;
   display: flex;
   flex-grow: 1;
