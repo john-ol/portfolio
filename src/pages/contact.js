@@ -1,6 +1,5 @@
 import React, { useState, useRef } from 'react'
 import axios from 'axios'
-
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
 import { Layout } from './../components/Layout/Layout'
@@ -18,6 +17,7 @@ import {
   Recaptcha,
   SendButton,
 } from '../components/Pages/contact/contact.components'
+import { contactFormAnimation } from '../components/Pages/contact/contact.animation'
 
 export default function Contact() {
   const url = process.env.GATSBY_API_URL
@@ -98,7 +98,11 @@ export default function Contact() {
       <Seo pageTitle='Contact me' />
       <ContactContainer>
         <ContactRow>
-          <ContactForm>
+          <ContactForm
+            variants={contactFormAnimation}
+            initial='hidden'
+            animate='visible'
+          >
             <FormHeader>
               <FormTitle>Contact me</FormTitle>
               <FormRequired>Required information*</FormRequired>

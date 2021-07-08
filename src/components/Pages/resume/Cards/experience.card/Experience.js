@@ -4,11 +4,17 @@ import { CardItem } from '../CardItem/CardItem'
 import { CardIcon } from './experience.components'
 import { TimeLineSection } from '../TimeLine/timeline.components'
 import { TimeLine } from '../TimeLine/TimeLine'
+import { experienceAnimation } from './experience.animations'
 
 export const Experience = () => {
   const { area, title, body } = useExperience()
   return (
-    <CardItem area={area} title={title} icon={<CardIcon />}>
+    <CardItem
+      area={area}
+      title={title}
+      icon={<CardIcon />}
+      variants={experienceAnimation}
+    >
       <TimeLineSection>
         {body.experience.map((el) => (
           <TimeLine

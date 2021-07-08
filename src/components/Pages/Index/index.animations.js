@@ -1,4 +1,4 @@
-export const InfoColAnimation = {
+export const infoColAnimation = {
   hidden: {
     opacity: 0,
     x: '-50vw',
@@ -8,12 +8,13 @@ export const InfoColAnimation = {
     x: 0,
     transition: {
       type: 'spring',
-      duration: 0.8,
+      bounce: 0.4,
+      duration: 1,
     },
   },
 }
 
-export const ImageColAnimation = {
+export const imageColAnimation = {
   hidden: {
     opacity: 0,
     x: '50vw',
@@ -22,7 +23,11 @@ export const ImageColAnimation = {
     opacity: 1,
     x: 0,
     transition: {
-      duration: 0.8,
+      type: 'spring',
+      damping: 12,
+      bounce: 0.35,
+      delay: 0.3,
+      duration: 1,
     },
   },
 }

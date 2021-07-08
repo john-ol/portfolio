@@ -12,7 +12,10 @@ import {
   ProjectImage,
 } from '../components/Pages/project-details/project-details.components'
 import { ProjectDetailsCard } from '../components/Pages/project-details/ProjectDetailsCard/ProjectDetailsCard'
-
+import {
+  infoColAnimation,
+  imageColAnimation,
+} from '../components/Pages/project-details/project-details.animation'
 export default function ProjectDetails({ data }) {
   const { title } = data.markdownRemark.frontmatter.projects
   const image = getImage(
@@ -24,10 +27,18 @@ export default function ProjectDetails({ data }) {
       <Seo pageTitle={title} />
       <ProjectContainer>
         <ProjectRow>
-          <InfoCol>
+          <InfoCol
+            variants={infoColAnimation}
+            initial='hidden'
+            animate='visible'
+          >
             <ProjectDetailsCard data={data.markdownRemark} />
           </InfoCol>
-          <ImageCol>
+          <ImageCol
+            variants={imageColAnimation}
+            initial='hidden'
+            animate='visible'
+          >
             <ImageTitle>Images:</ImageTitle>
             <ProjectImage>
               <GatsbyImage image={image} alt={title} />

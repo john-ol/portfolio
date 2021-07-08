@@ -22,8 +22,8 @@ import {
 } from '../components/Pages/Index/index.components'
 import {
   socialIconsAnimate,
-  InfoColAnimation,
-  ImageColAnimation,
+  infoColAnimation,
+  imageColAnimation,
 } from '../components/Pages/Index/index.animations'
 import { LinkButton } from '../components/Buttons/LinkButton/linkButton.components'
 
@@ -37,7 +37,7 @@ export default function Home() {
       <HeroContainer>
         <HeroRow>
           <InfoCol
-            variants={InfoColAnimation}
+            variants={infoColAnimation}
             initial='hidden'
             animate='visible'
           >
@@ -86,7 +86,7 @@ export default function Home() {
             </ButtonListHero>
           </InfoCol>
           <ImageCol
-            variants={ImageColAnimation}
+            variants={imageColAnimation}
             initial='hidden'
             animate='visible'
           >

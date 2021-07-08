@@ -10,9 +10,9 @@ export const ResumeGrid = styled.section`
   grid-template-areas:
     'general'
     'summary'
+    'education'
     'skills'
-    'experience'
-    'education';
+    'experience';
   grid-gap: 1rem;
   width: 100%;
 

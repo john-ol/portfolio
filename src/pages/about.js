@@ -5,8 +5,8 @@ import { useAboutText } from '../components/Pages/about/queries/useAboutText'
 import { Layout } from '../components/Layout/Layout'
 import { Seo } from '../components/Seo/Seo'
 import {
-  InfoColAnimation,
-  ImageColAnimation,
+  infoColAnimation,
+  imageColAnimation,
 } from '../components/Pages/about/about.animations'
 import {
   AboutContainer,
@@ -33,7 +33,7 @@ export default function About() {
       <AboutContainer>
         <AboutRow>
           <InfoCol
-            variants={InfoColAnimation}
+            variants={infoColAnimation}
             initial='hidden'
             animate='visible'
           >
@@ -47,7 +47,7 @@ export default function About() {
             </AboutCard>
           </InfoCol>
           <ImageCol
-            variants={ImageColAnimation}
+            variants={imageColAnimation}
             initial='hidden'
             animate='visible'
           >

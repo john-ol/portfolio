@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { up } from 'styled-breakpoints'
+import { motion } from 'framer-motion'
 
 export const StackItem = styled.section`
   :not(:last-child) {
@@ -14,7 +15,7 @@ export const StackGrid = styled.div`
   margin-bottom: -1.5rem;
 `
 
-export const TechLink = styled.a`
+export const TechLink = styled(motion.a)`
   width: 50%;
   margin-bottom: 1.5rem;
   padding-left: 1.5rem;

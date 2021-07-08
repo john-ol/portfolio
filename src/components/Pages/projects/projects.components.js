@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { up } from 'styled-breakpoints'
+import { motion } from 'framer-motion'
 import { Container } from '../../Layout/layout.components'
 
 export const ProjectsContainer = styled(Container)`
@@ -21,3 +22,5 @@ export const ProjectsGrid = styled.div`
     grid-template-columns: repeat(3, 1fr);
   }
 `
+
+export const ProjectItem = styled(motion.div)``

@@ -15,7 +15,7 @@ export const SkillsGrid = styled.div`
       }
 
       ${up('md')} {
-        margin-bottom: 1.2rem;
+        margin-bottom: 0.6rem;
       }
 
       ${up('md', 'landscape')} {
@@ -23,7 +23,7 @@ export const SkillsGrid = styled.div`
       }
 
       ${up('lg')} {
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
       }
     }
   }

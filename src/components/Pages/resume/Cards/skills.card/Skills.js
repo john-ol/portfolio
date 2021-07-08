@@ -1,6 +1,7 @@
 import React from 'react'
 import { CardItem } from '../CardItem/CardItem'
 import { useSkills } from './skills.queries'
+import { skillsAnimation } from './skills.animations'
 import {
   CardIcon,
   SkillsGrid,
@@ -13,7 +14,12 @@ export const Skills = () => {
   const { area, title, body } = useSkills()
   const { skills } = body
   return (
-    <CardItem area={area} title={title} icon={<CardIcon />}>
+    <CardItem
+      area={area}
+      title={title}
+      icon={<CardIcon />}
+      variants={skillsAnimation}
+    >
       <SkillsGrid>
         {skills.map((item) => (
           <SkillsItem key={item.title}>
