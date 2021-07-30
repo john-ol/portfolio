@@ -49,6 +49,10 @@ export const ContactForm = styled(motion.form)`
     width: 40rem;
   }
 
+  ${up('md', 'landscape')} {
+    margin: 1.5rem 0;
+  }
+
   ${up('lg')} {
     width: 50rem;
   }
