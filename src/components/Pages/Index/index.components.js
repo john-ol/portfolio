@@ -240,6 +240,10 @@ export const HeroImage = styled.div`
   }
 
   ${up('xl')} {
+    max-width: 44%;
+  }
+
+  ${up('xxl')} {
     max-width: 50%;
   }
 `

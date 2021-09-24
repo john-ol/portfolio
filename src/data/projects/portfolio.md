@@ -4,7 +4,7 @@ projects:
   {
     path: 'portfolio',
     title: 'Portfolio',
-    description: 'My personal portfolio made with front-end framework Gatsby. I preferred to use mobile-first design in this project. My portfolio looks the same beautifully on all modern devices and have minimalistic design.',
+    description: 'My personal portfolio made with front-end framework Gatsby. I preferred to use mobile-first design in this project. My portfolio looks equally good on all modern devices and has minimalistic design.',
     type: 'Personal website',
     thumb: '../../images/projects/thumb/portfolio-thumb.jpg',
     featured: '../../images/projects/featured/portfolio-featured.jpg',
