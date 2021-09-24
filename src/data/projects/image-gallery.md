@@ -4,7 +4,7 @@ projects:
   {
     path: 'image-gallery',
     title: 'Image gallery',
-    description: 'A simple image gallery made with React library and Material-UI framework. The application allows you to download popular image files such as png, jpj, gif, bmp.',
+    description: 'A simple image gallery made with React library and Material-UI framework. The application allows you to download popular image files such as png, jpj, gif, bmp. P.S. This project has a limited space on disk, write restriction',
     type: 'Application',
     thumb: '../../images/projects/thumb/image-gallery-thumb.jpg',
     featured: '../../images/projects/featured/image-gallery-featured.jpg',
