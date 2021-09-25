@@ -14,10 +14,11 @@ resume:
               subtitle: 'Front-end developer',
               list:
                 [
+                  'Updating design and functionality of the website, implementation of seo optimization, resulting in growth in online sales.',
                   'Daily maintenance of code, debugging issues and solving client’s problems.',
-                  'Conducted design and code reviews to improve new features.',
-                  'Experience in template building, writing custom modules.',
-                  'Planned, implemented and oversaw website creative content and overall eCommerce functionality to improve customers experience through e-blasts, abandoned cart emails.',
+                  'Implementation of new functionality based on technical requirement.',
+                  'Templates creating, writing new modules.',
+                  'Planned, implemented and oversaw website creative content and overall e-commerce functionality to improve customers experience through e-blasts, abandoned cart emails.',
                   'Created new web pages utilizing content provided by online marketing to improve the website.',
                   'Monitoring website performance and rectifying front-end-related issues.',
                   'Communicating technical issues in an understandable manner to the team and clients.',
