@@ -8,7 +8,11 @@ resume:
       {
         skills:
           [
-            { title: 'Languages:', color: '#e3a917', items: ['JS (es5, es6)'] },
+            {
+              title: 'Languages:',
+              color: '#e3a917',
+              items: ['JavaScript (es5, es6)'],
+            },
             {
               title: 'Front-end:',
               color: '#008c22',
@@ -21,6 +25,7 @@ resume:
                   'HTML5',
                   'CSS3',
                   'SASS/SCSS',
+                  'Framer Motion',
                 ],
             },
             {
@@ -42,7 +47,7 @@ resume:
             {
               title: 'Database:',
               color: '#00695f',
-              items: ['MongoDb', 'Firestore'],
+              items: ['MongoDB', 'Firestore'],
             },
             {
               title: 'Other:',
