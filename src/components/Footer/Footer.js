@@ -34,7 +34,7 @@ const SectionFooter = () => {
               </SocialIcon>
               <SocialIcon>
                 <SocialIconLink
-                  href='https://www.linkedin.com/in/evgeniy-oleinikov-3b7b3a1b4'
+                  href='https://www.linkedin.com/in/evgeniy-oleinikov'
                   target='_blank'
                 >
                   <LinkedinIcon />

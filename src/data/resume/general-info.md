@@ -22,7 +22,7 @@ resume:
                 {
                   icon: '/resume-icons/linkedin.svg',
                   text: 'linkedln.com',
-                  link: 'https://www.linkedin.com/in/evgeniy-oleinikov-3b7b3a1b4',
+                  link: 'https://www.linkedin.com/in/evgeniy-oleinikov',
                 },
               ],
             languages:
