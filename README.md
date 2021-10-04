@@ -8,15 +8,19 @@ My personal portfolio made with front-end framework Gatsby. I preferred to use m
 ## 
 **Front-end:**
 
-| ![gatsby](https://www.oleinikov.dev/project-icons/gatsby.svg) | ![styled-components](https://www.oleinikov.dev/project-icons/styled-components.svg) | ![framer motion](https://www.oleinikov.dev/project-icons/framer.svg) | ![axios](https://www.oleinikov.dev/project-icons/axios.svg) | ![Sweetalert](https://www.oleinikov.dev/project-icons/sweet-alert2.svg) | 
-|:--:|:--:|:--:|:--:|:--:|
-| Gatsby | Styled-components | Framer motion | Axios | Sweetalert | 
+[![gatsby](https://www.oleinikov.dev/readme/gatsby.svg "gatsby")](https://www.oleinikov.dev/readme/gatsby.svg "gatsby")
+[![styled components](https://www.oleinikov.dev/readme/styled-components.svg "styled components")](https://www.oleinikov.dev/readme/styled-components.svg "styled components")
+[![framer motion](https://www.oleinikov.dev/readme/framer-motion.svg "framer motion")](https://www.oleinikov.dev/readme/framer-motion.svg "framer motion")
+[![axios](https://www.oleinikov.dev/readme/axios.svg "axios")](https://www.oleinikov.dev/readme/axios.svg "axios")
+[![sweetAlert](https://www.oleinikov.dev/readme/sweet-alert.svg "sweetAlert")](https://www.oleinikov.dev/readme/sweet-alert.svg "sweetAlert")
 
 **Back-end:**
 
-| ![Express](https://www.oleinikov.dev/project-icons/express.svg) | ![express validator](https://www.oleinikov.dev/project-icons/express-validator.svg) | ![Telegraf.js](https://www.oleinikov.dev/project-icons/telegraf.svg) |
-|:--:|:--:|:--:|
-| Express | Express-validator| Telegraf.js | 
+[![express](https://www.oleinikov.dev/readme/express.svg "express")](https://www.oleinikov.dev/readme/express.svg "express")
+[![express validator](https://www.oleinikov.dev/readme/express-validator.svg "express validator")](https://www.oleinikov.dev/readme/express-validator.svg "express validator")
+[![telegraph](https://www.oleinikov.dev/readme/telegraph.svg "telegraph")](https://www.oleinikov.dev/readme/telegraph.svg "telegraph")
 
+
+## 
 **Images:**
 [![Portfolio](https://www.oleinikov.dev/static/72611bd877d34fc11958cd536a220dcd/99d89/portfolio-featured.webp "Portfolio")](https://www.oleinikov.dev/static/72611bd877d34fc11958cd536a220dcd/99d89/portfolio-featured.webp "Portfolio")
