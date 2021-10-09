@@ -28,7 +28,7 @@ resume:
             languages:
               {
                 icon: '/resume-icons/languages.svg',
-                text: 'English(pre-intermidiate), Ukrainian, Russian',
+                text: 'English(pre-intermediate), Ukrainian, Russian',
               },
           },
       },
